@@ -1,8 +1,8 @@
 <html>
     <head>
-        <title>wall</title>
+        <title>404</title>
     </head>
     <body>
-        <h1>Wall</h1>
+        <h1>404</h1>
     </body>
 </html>
