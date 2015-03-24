@@ -2,6 +2,8 @@
 require_once "controllers/wallcontroller.php";
 require_once "controllers/usercontroller.php";
 require_once "controllers/homecontroller.php";
+require_once "controllers/authcontroller.php";
+
 
 //$requestURI = explode("/", parse_url(trim(strtolower($_SERVER["REQUEST_URI"]), "/"), PHP_URL_PATH));
 
