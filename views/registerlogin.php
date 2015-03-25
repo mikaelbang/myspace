@@ -31,6 +31,13 @@
                 <div class="logo"><p class="AW">AW</p></div>
             </div>
             <div id="content">
+                <?php
+                if(isset($error)){
+                ?>
+                    <p><?php echo($error)?></p>
+                <?php
+                }
+                ?>
                 <div class="hideLogin"><p class="loginHeadline">If you´re not a member then <a href="#" class="showRegister">register here</a></p></div>
                 <div class="hideRegister"><p class="registerHeadline">Sign up or go back to <a href="#" class="showLogin">log in</a></p></div>
                 <form method="post" action="auth/login">

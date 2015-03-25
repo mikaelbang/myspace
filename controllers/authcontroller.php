@@ -9,7 +9,7 @@ class Authcontroller{
         if(isset($_SESSION["error"])){
             $error = $_SESSION["error"];
         }
-        require_once "/views/registerlogin.php";
+        require_once "views/registerlogin.php";
     }
 
     public function registerAction(){
@@ -29,7 +29,7 @@ class Authcontroller{
         }
         else{
             $_SESSION["error"] = $this->errors;
-            header("location:../auth/index");
+            header("location:../");
         }
 
     }
@@ -61,15 +61,15 @@ class Authcontroller{
     }
 
     private function validator ($email, $pass1, $pass2, $first_name, $last_name){
-        if(empty($first_name) && empty($last_name) && empty($email) && empty($pass1) && empty($pass2)){
+        if(empty($first_name) || empty($last_name) || empty($email) || empty($pass1) || empty($pass2)){
             $this->errors = "You have to fill in all fields";
             return false;
         }
-        if(! filter_var($email, FILTER_VALIDATE_EMAIL)){
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
             $this->errors = "Invalid email";
             return false;
         }
-        if( strlen($pass1) < 6  ) {
+        if(strlen($pass1) < 6) {
             $this->errors = " Your password has to be at least six characters long";
             return false;
         }
