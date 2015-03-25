@@ -23,22 +23,7 @@
     <div id="header">
         <p id="logo">AW</p>
     </div>
-    <div id="menu">
-        <div id="menuBorder">
-            <div class="menuItems">
-                <a href="#" id="active" class="noStyleLinks"><p class="menuItemText">Wall</p></a>
-            </div>
-            <div class="menuItems">
-                <a href="#" class="noStyleLinks"><p class="menuItemText">Profile</p></a>
-            </div>
-            <div class="menuItemsSearch">
-                <input type="search" placeholder="Search" class="search" />
-            </div>
-            <div id="rightMenuItem">
-                <a href="#" class="noStyleLinks"><p class="menuItemText">Welcome, Mårten</p></a>
-            </div>
-        </div>
-    </div>
+    <?php include "header.php" ?>
     <div id="wallContent">
         <div id="hiddenMenu">
             <a href="#" class="noStyleLinks"><p class="hiddenMenuText">Edit Profile</p></a>
