@@ -4,6 +4,8 @@ class Usercontroller{
 
     public function showAction(){
 
+        //die(var_dump('test'));
+
         $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
         
         //Riktiga bindParam parametern
@@ -14,7 +16,7 @@ class Usercontroller{
         $profileStm->execute();
         $user = $profileStm->fetchObject();
 
-        require_once "/views/profile.php";
+        require_once "views/profile.php";
     }
 
     public function otherAction(){
@@ -27,7 +29,7 @@ class Usercontroller{
         $OtherProfileStm->bindParam(":user_id", $userId, PDO::PARAM_INT);
         $OtherProfileStm->execute();
         $user = $OtherProfileStm->fetchObject();
-        require_once "/views/other_user.php";
+        require_once "views/other_user.php";
     }
 
     public function followersAction(){
@@ -48,6 +50,6 @@ class Usercontroller{
 
         $Ifollow = $followsStm->fetchAll();
 
-        require_once "/views/followers.php";
+        require_once "views/followers.php";
     }
 }
