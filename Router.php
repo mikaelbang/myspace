@@ -6,7 +6,7 @@ require_once "controllers/authcontroller.php";
 
 
 //$requestURI = explode("/", parse_url(trim(strtolower($_SERVER["REQUEST_URI"]), "/"), PHP_URL_PATH));
-
+session_start();
 $requestURI = explode("/", strtolower($_SERVER["REQUEST_URI"]));
 
 $controller = "homecontroller";

@@ -5,7 +5,7 @@ class Usercontroller{
     public function showAction(){
 
         $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
-        session_start();
+        
         //Riktiga bindParam parametern
         //$_SESSION["user"]->user_id
         $userId = 1;
