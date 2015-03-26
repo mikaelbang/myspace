@@ -11,6 +11,6 @@ class Wallcontroller{
         $postStm->execute();
 
         $posts = $postStm->fetchAll();
-        require_once "/views/wall.php";
+        require_once "views/wall.php";
     }
 }

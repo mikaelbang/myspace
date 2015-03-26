@@ -77,8 +77,12 @@ body{
     font-size: 18px;
     margin-bottom: 20px;
     cursor: pointer;
+    outline: none;
 }
 
+.loginButton:active{
+    background-color: #1c8591;
+}
 
 .inputs{
     width: 400px;
@@ -110,4 +114,9 @@ body{
     font-size: 18px;
     margin-bottom: 20px;
     cursor: pointer;
+    outline: none;
+}
+
+.registerButton:active{
+    background-color: #1c8591;
 }

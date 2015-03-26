@@ -5,25 +5,7 @@
         <link href="../../myspace/views/css/registerlogin.css" rel="stylesheet" type="text/css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $(".showRegister").click(function(){
-                    $("#register").css("display","block");
-                    $("#login").css("display","none");
-                    $(".hideLogin").css("display","none");
-                    $(".hideRegister").css("display","block");
-                });
-
-                $(".showLogin").click(function(){
-                    $("#register").css("display","none");
-                    $("#login").css("display","block");
-                    $(".hideLogin").css("display","block");
-                    $(".hideRegister").css("display","none");
-                });
-            });
-
-
-        </script>
+        <script src="../../myspace/views/js/main.js"></script>
     </head>
     <body>
         <div id="wallpaper">

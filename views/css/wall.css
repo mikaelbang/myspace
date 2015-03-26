@@ -179,6 +179,7 @@ body{
     border: none;
     width: 150px;
     cursor: pointer;
+    outline: none;
 }
 
 .statuses{
@@ -267,6 +268,7 @@ body{
     font-size: 13px;
     letter-spacing: 1.2pt;
     cursor: pointer;
+    outline: none;
 }
 
 .likeButton:hover{
@@ -284,6 +286,7 @@ body{
     text-align: center;
     letter-spacing: 1.2pt;
     cursor: pointer;
+    outline: none;
 }
 
 .commentButton:hover{
