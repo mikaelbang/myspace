@@ -8,7 +8,6 @@
     <script src="../../myspace/views/js/main.js"></script>
 </head>
 <body>
-<<<<<<< HEAD
 <div id="wallpaper">
     <div id="header">
         <p id="logo">AW</p>
@@ -136,8 +135,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 </body>
