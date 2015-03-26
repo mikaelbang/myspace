@@ -4,6 +4,8 @@
     <link href="../../myspace/views/css/reset.css" rel="stylesheet" type="text/css"/>
     <link href="../../myspace/views/css/profile.css" rel="stylesheet" type="text/css"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../../myspace/views/js/main.js"></script>
 </head>
 <body>
 <div id="wallpaper">
@@ -13,10 +15,10 @@
     <div id="menu">
         <div id="menuBorder">
             <div class="menuItems">
-                <a href="#" id="active" class="noStyleLinks"><p class="menuItemText">Wall</p></a>
+                <a href="../wall/show" id="active" class="noStyleLinks"><p class="menuItemText">Wall</p></a>
             </div>
             <div class="menuItems">
-                <a href="#" class="noStyleLinks"><p class="menuItemText">Profile</p></a>
+                <a href="../user/show" class="noStyleLinks"><p class="menuItemText">Profile</p></a>
             </div>
             <div class="menuItemsSearch">
                 <input type="search" placeholder="Search" class="search" />
@@ -38,11 +40,11 @@
                     <p class="profileName">Mårten Claesson</p>
                     <div class="follows">
                         <div class="followsNrDiv"><p class="followsNr">119</p></div>
-                        <p class="followsText">FOLLOWS</p>
+                        <a href="#" class="noStyleLinks"><p class="followsText">Follows</p></a>
                     </div>
                     <div class="follows">
                         <div class="followsNrDiv"><p class="followsNr">24</p></div>
-                        <p class="followsText">FOLLOWERS</p>
+                        <a href="#" class="noStyleLinks"><p class="followsText">Followers</p></a>
                     </div>
                     <input type="submit" name="" id="followButton" value="FOLLOW"/>
                     <div class="about">
@@ -66,6 +68,9 @@
                 <div class="statusPosts">
                     <p class="statusPostsText">//michaelshuntByRichardAndTheButter..//</p>
                 </div>
+                <div class="statusPosts">
+                    <img class="statusPostsPhoto" src=""/>
+                </div>
             </div>
             <div class="statusUnderBorder">
                 <div class="showLikes">
@@ -73,8 +78,8 @@
                     <p class="showComments">321 C</p>
                 </div>
                 <div class="statusButtons">
-                    <input class="likeButton" value="LIKE" name=""/>
-                    <input class="commentButton" value="COMMENT" name=""/>
+                    <input class="likeButton" type="submit"  value="LIKE" name=""/>
+                    <input class="commentButton" type="submit" value="COMMENT" name=""/>
                 </div>
             </div>
         </div>

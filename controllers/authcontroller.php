@@ -9,7 +9,7 @@ class Authcontroller{
         if(isset($_SESSION["error"])){
             $error = $_SESSION["error"];
         }
-        require_once "/views/registerlogin.php";
+        require_once "views/registerlogin.php";
     }
 
     public function registerAction(){
