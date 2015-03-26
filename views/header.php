@@ -1,11 +1,11 @@
 <div id="menu">
     <div id="menuBorder">
-        <div class="menuItems">
-            <a href="../wall/show" id="active" class="noStyleLinks"><p class="menuItemText">Wall</p></a>
-        </div>
-        <div class="menuItems">
-            <a href="../user/show" class="noStyleLinks"><p class="menuItemText">Profile</p></a>
-        </div>
+        <a href="../wall/show" id="active" class="noStyleLinks"><div class="menuItems">
+            <p class="menuItemText">Wall</p>
+        </div></a>
+        <a href="../user/show" class="noStyleLinks"><div class="menuItems">
+            <p class="menuItemText">Profile</p>
+        </div></a>
         <div class="menuItemsSearch">
             <input type="search" placeholder="Search" class="search" />
         </div>

@@ -13,38 +13,7 @@
         <p id="logo">AW</p>
     </div>
     <?php include "header.php" ?>
-    <div id="wallContent">
-        <div id="hiddenMenu">
-            <a href="#" class="noStyleLinks"><p class="hiddenMenuText">Edit Profile</p></a>
-            <a href="#" class="noStyleLinks"><p class="hiddenMenuText">Log Out</p></a>
-        </div>
-        <div id="underBorder">
-            <div class="underBorderItem">
-                <input class="underBorderText" type="submit" value="SOUND" name="sort_sound"/>
-            </div>
-            <div class="underBorderItem">
-                <input class="underBorderText" type="submit" value="PHOTO" name="sort_photo"/>
-            </div>
-            <div class="underBorderItem">
-                <input class="underBorderText" type="submit" value="TEXT" name="sort_text"/>
-            </div>
-        </div>
-        <div id="menu">
-            <div id="menuBorder">
-                <div class="menuItems">
-                    <a href="../wall/show" id="active" class="noStyleLinks"><p class="menuItemText">Wall</p></a>
-                </div>
-                <div class="menuItems">
-                    <a href="../user/show" class="noStyleLinks"><p class="menuItemText">Profile</p></a>
-                </div>
-                <div class="menuItemsSearch">
-                    <input type="search" placeholder="Search" class="search" />
-                </div>
-                <div id="rightMenuItem">
-                    <a href="#" class="noStyleLinks"><p class="menuItemText">Welcome, Mårten</p></a>
-                </div>
-            </div>
-        </div>
+
         <div id="wallContent">
             <div id="hiddenMenu">
                 <a href="#" class="noStyleLinks"><p class="hiddenMenuText">Edit Profile</p></a>

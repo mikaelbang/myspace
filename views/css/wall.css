@@ -76,10 +76,6 @@ body{
     cursor: pointer;
 }
 
-#active{
-    background-color: #1c8591;
-}
-
 .noStyleLinks{
     text-decoration: none;
     color: white;
