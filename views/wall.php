@@ -1,4 +1,5 @@
 <html>
+<<<<<<< HEAD
     <head>
         <title>Myspace</title>
         <link href="../../myspace/views/css/reset.css" rel="stylesheet" type="text/css"/>
@@ -26,6 +27,7 @@
                     <div class="underBorderItem">
                         <input class="underBorderText" type="submit" value="PHOTO" name="sort_photo"/>
                     </div>
+
                     <div class="underBorderItem">
                         <input class="underBorderText" type="submit" value="TEXT" name="sort_text"/>
                     </div>
@@ -64,7 +66,6 @@
                         </div>
                         <div class="commentContent">
                             <div id="others_comments<?php echo($post["post_id"])?>" class="othersComments">
-
                             </div>
                             <form class="addCommentForm" method="post" action="../wall/comment">
                                 <div class="yourComment">

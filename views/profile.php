@@ -13,10 +13,27 @@
                 <p id="logo">AW</p>
             </div>
             <?php include "header.php"?>
+
+            <div id="menu">
+                <div id="menuBorder">
+                    <div class="menuItems">
+                        <a href="../wall/show" id="active" class="noStyleLinks"><p class="menuItemText">Wall</p></a>
+                    </div>
+                    <div class="menuItems" id="active">
+                        <a href="../user/show" class="noStyleLinks"><p class="menuItemText">Profile</p></a>
+                    </div>
+                    <div class="menuItemsSearch">
+                        <input type="search" placeholder="Search" class="search" />
+                    </div>
+                    <div id="rightMenuItem">
+                        <a href="#" class="noStyleLinks"><p class="menuItemText">Welcome, Mårten</p></a>
+                    </div>
+                </div>
+            </div>
             <div id="wallContent">
                 <div id="hiddenMenu">
                     <a href="#" class="noStyleLinks"><p class="hiddenMenuText">Edit Profile</p></a>
-                    <a href="../auth/logout" class="noStyleLinks"><p class="hiddenMenuText">Log Out</p></a>
+                    <a href="#" class="noStyleLinks"><p class="hiddenMenuText">Log Out</p></a>
                 </div>
                 <div class="profileContent">
                     <div class="profileInfo">
@@ -31,15 +48,32 @@
                                 <div class="followsNrDiv"><p class="followsNr">24</p></div>
                                 <a href="#" class="noStyleLinks"><p class="followsText">Followers</p></a>
                             </div>
+                            <div class="followRequest">
+                                <p class="followRequestText">You have ? requests</p>
+                            </div>
                             <input type="submit" name="" id="followButton" value="FOLLOW"/>
+                            <input type="submit" name="" id="unfollowButton" value="UNFOLLOW"/>
                             <div class="about">
                                 <p class="aboutText">Hej jag heter Mårten Claesson och jag är mest känd som en främling. Jag har ofta hängslen på mig men ibland vill man ju bara "Go Nuts" så att säga och ha på sig vanliga braxor. Jag jamar ofta på fritiden</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                    </div>
                 <div class="post">
-
+                    <div class="postContent">
+                        <input class="writePost" name="" placeholder="Write your status here..." type="text"/>
+                        <input class="postPhoto" name="" placeholder="Choose your photo..." type="text"/>
+                        <input class="postSound" name="" placeholder="Choose your sound..." type="text"/>
+                    </div>
+                    <div class="hiddenPostContent">
+                        <div class="postBorder">
+                            <p class="postBorderText" id="showSound">SOUND</p>
+                            <p class="postBorderText" id="showPhoto">PHOTO</p>
+                            <p class="postBorderText" id="showText">TEXT</p>
+                        </div>
+                        <button class="postButton" name="">POST</button>
+                    </div>
+>>>>>>> origin/rillvar
                 </div>
                 <div class="statusContent">
                     <div class="statusUser">
@@ -60,10 +94,17 @@
                     <div class="statusUnderBorder">
                         <div class="showLikes">
                             <p class="showLikesText">13,900 L</p>
+<<<<<<< HEAD
                             <p class="showComments">321 C</p>
                         </div>
                         <div class="statusButtons">
                             <input class="likeButton" type="submit"  value="LIKE" name=""/>
+=======
+                            <a href="#" class="noStyleLinks"><p class="showComments">45</p><img src="../../myspace/views/img/commentpic.png" class="commentPic"/></a>
+                        </div>
+                        <div class="statusButtons">
+                            <button class="likeButton" type="submit"  value="LIKE" name="">LIKE</button>
+>>>>>>> origin/rillvar
                             <input class="commentButton" type="submit" value="COMMENT" name=""/>
                         </div>
                     </div>
@@ -107,7 +148,11 @@
                     <div class="statusUnderBorder">
                         <div class="showLikes">
                             <p class="showLikesText">13,900 L</p>
+<<<<<<< HEAD
                             <p class="showComments">321 C</p>
+=======
+                            <a href="#" class="noStyleLinks"><p class="showComments">45</p><img src="../../myspace/views/img/commentpic.png" class="commentPic"/></a>
+>>>>>>> origin/rillvar
                         </div>
                         <div class="statusButtons">
                             <input class="likeButton" type="submit" value="LIKE" name=""/>
