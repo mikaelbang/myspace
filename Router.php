@@ -1,7 +1,6 @@
 <?php
 require_once "controllers/wallcontroller.php";
 require_once "controllers/usercontroller.php";
-require_once "controllers/homecontroller.php";
 require_once "controllers/authcontroller.php";
 
 
@@ -9,8 +8,8 @@ require_once "controllers/authcontroller.php";
 session_start();
 $requestURI = explode("/", strtolower($_SERVER["REQUEST_URI"]));
 
-$controller = "homecontroller";
-$action = "showAction";
+$controller = "authcontroller";
+$action = "indexAction";
 
 if(!empty($requestURI[2])) {
     $controller = $requestURI[2] . "controller";

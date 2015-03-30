@@ -3,6 +3,7 @@
         <title>Myspace</title>
         <link href="../../myspace/views/css/reset.css" rel="stylesheet" type="text/css"/>
         <link href="../../myspace/views/css/profile.css" rel="stylesheet" type="text/css"/>
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="../../myspace/views/js/main.js"></script>
@@ -12,22 +13,7 @@
             <div id="header">
                 <p id="logo">AW</p>
             </div>
-            <div id="menu">
-                <div id="menuBorder">
-                    <div class="menuItems">
-                        <a href="../wall/show" id="active" class="noStyleLinks"><p class="menuItemText">Wall</p></a>
-                    </div>
-                    <div class="menuItems" id="active">
-                        <a href="../user/show" class="noStyleLinks"><p class="menuItemText">Profile</p></a>
-                    </div>
-                    <div class="menuItemsSearch">
-                        <input type="search" placeholder="Search" class="search" />
-                    </div>
-                    <div id="rightMenuItem">
-                        <a href="#" class="noStyleLinks"><p class="menuItemText">Welcome, Mårten</p></a>
-                    </div>
-                </div>
-            </div>
+            <?php include "header.php"?>
             <div id="wallContent">
                 <div id="hiddenMenu">
                     <a href="#" class="noStyleLinks"><p class="hiddenMenuText">Edit Profile</p></a>
@@ -146,6 +132,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </body>

@@ -6,13 +6,39 @@ class Wallcontroller{
 
         $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
 
-        //$_SESSION['user']->user_id
-        $userId = 3;
         $postStm = $db->prepare('SELECT * FROM posts AS P JOIN users AS U ON (P.user_id = U.user_id) JOIN followers AS F ON (F.followee = U.user_id) WHERE F.follower = :currentUser');
-        $postStm->bindParam(":currentUser", $userId, PDO::PARAM_STR);
+        $postStm->bindParam(":currentUser", $_SESSION['user']->user_id, PDO::PARAM_STR);
         $postStm->execute();
 
         $posts = $postStm->fetchAll();
+
         require_once "views/wall.php";
+    }
+
+    public function getCommentsAction(){
+
+            $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
+
+        if(isset($_POST["post_id"])){
+            $commentStm = $db->prepare('SELECT * FROM comments AS CO JOIN users AS U ON (U.user_id = CO.user_id) WHERE post_id = :post_id ORDER BY CO.comment_id DESC');
+            $commentStm->bindParam(':post_id', $_POST["post_id"], PDO::PARAM_INT);
+            $commentStm->execute();
+            $comments = $commentStm->fetchAll();
+            $return = json_encode($comments);
+            echo($return);
+        }
+    }
+
+    public function commentAction(){
+        $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
+
+
+        $insertCommentStm = $db->prepare('INSERT INTO comments (content, post_id, user_id) VALUES (:content, :post_id, :user_id)');
+        $insertCommentStm->bindParam(':content', $_POST['content'], PDO::PARAM_STR);
+        $insertCommentStm->bindParam(':post_id', $_POST['hidden_post_id'], PDO::PARAM_INT);
+        $insertCommentStm->bindParam(':user_id', $_SESSION['user']->user_id, PDO::PARAM_INT);
+        $insertCommentStm->execute();
+
+        echo($_POST['content'] ." " . $_POST['hidden_post_id'] ." ". $_SESSION['user']->user_id);
     }
 }

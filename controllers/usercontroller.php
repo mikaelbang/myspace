@@ -7,12 +7,9 @@ class Usercontroller{
         //die(var_dump('test'));
 
         $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
-        
-        //Riktiga bindParam parametern
-        //$_SESSION["user"]->user_id
-        $userId = 1;
+
         $profileStm = $db->prepare('SELECT * FROM users WHERE user_id = :user_id');
-        $profileStm->bindParam(":user_id", $userId, PDO::PARAM_INT);
+        $profileStm->bindParam(":user_id", $_SESSION["user"]->user_id, PDO::PARAM_INT);
         $profileStm->execute();
         $user = $profileStm->fetchObject();
 
