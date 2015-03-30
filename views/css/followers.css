@@ -1,0 +1,267 @@
+body{
+    background: url("../img/musicbckr.png");
+    color: white;
+    font-family: 'Lato', sans-serif;
+    background-attachment: fixed;
+}
+
+#wallpaper{
+    margin: 0 auto;
+}
+
+#header{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#logo{
+    font-size: 80px;
+}
+
+#menu{
+    height: 40px;
+    width: 900px;
+    background-color: #86c3ca;
+    margin: 0 auto;
+}
+
+#menuBorder{
+    margin-left: 40px;
+    width: 860px;
+}
+
+.menuItems{
+    vertical-align: top;
+    height: 27px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 13px;
+}
+
+.menuItemsSearch{
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 11px;
+}
+
+.menuItemText{
+    letter-spacing: 1.3pt;
+}
+
+.search{
+    width: 300px;
+}
+
+#rightMenuItem{
+    vertical-align: top;
+    height: 25px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    text-align: right;
+    margin-left: 20%;
+    font-size: 12px;
+}
+
+#rightMenuItem:hover{
+    background-color: #1c8591;
+    cursor: pointer;
+}
+
+.menuItems:hover{
+    background-color: #1c8591;
+    cursor: pointer;
+}
+
+.noStyleLinks{
+    text-decoration: none;
+    color: white;
+}
+
+#wallContent{
+    width: 900px;
+    background-color: rgba(0,0,0,0.6);
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#hiddenMenu{
+    display: none;
+    background-color: #1c8591;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    width: 100px;
+    margin-left: 799px;
+
+}
+
+.hiddenMenuText{
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    border-bottom: 1px solid white;
+}
+
+.hiddenMenuText:hover{
+    color: #86c3ca;
+}
+
+#request{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+}
+
+.requestBorder{
+    width: 580px;
+    border-bottom: 1px solid #86c3ca;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.requestBorderText{
+    color: #1c8591;
+    padding-top: 10px;
+}
+
+.requestUser{
+    text-align: left;
+    margin: 15px;
+    width: 150px;
+    border: 1px solid #86c3ca;
+    display: inline-block;
+}
+
+.requestUserName{
+    color: black;
+    padding-bottom: 5px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.requestUserPic{
+    text-align: center;
+    margin-left: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+}
+
+.requestButtons{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 12px;
+}
+
+.accept{
+    border: none;
+    background-color: #cc4148;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.accept:active{
+    background-color: darkred;
+}
+
+.decline{
+    border: none;
+    background-color: #1c8591;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.decline:active{
+    background-color: #86c3ca;
+}
+
+.follower{
+    width: 290px;
+    background-color: white;
+    margin-top: 30px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+#pushFollower{
+    margin-left: 150px;
+}
+
+.followerBorder{
+    width: 290px;
+    height: 30px;
+    background-color: #86c3ca;
+}
+
+.followerBorderText{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.followerUser{
+    width: 290px;
+    height: 50px;
+    border-bottom: 1px solid #86c3ca;
+}
+
+.followerUserPic{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+.followerUserText{
+    padding-top: 16px;
+    display: inline-block;
+    color: #1c8591;
+    vertical-align: top;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    width: 140px;
+    text-align: left;
+}
+
+.unfollow{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 16px;
+    background-color: #cc4148;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+}
+
+.followButton{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 16px;
+    background-color: #1c8591;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+}
+
+.unfollow:active{
+    background-color: darkred;
+}
+
+.followButton:active{
+    background-color: #86c3ca;
+}
+
+

@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97e8b68f-8cd2-4428-b8fa-3160c8fc8983" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/authcontroller.php" afterPath="$PROJECT_DIR$/controllers/authcontroller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/css/followers.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/views/followers.php" afterPath="$PROJECT_DIR$/views/followers-temp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/followers.php" afterPath="$PROJECT_DIR$/views/followers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/js/main.js" afterPath="$PROJECT_DIR$/views/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/css/profile.css" afterPath="$PROJECT_DIR$/views/css/profile.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/profile.php" afterPath="$PROJECT_DIR$/views/profile.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/css/registerlogin.css" afterPath="$PROJECT_DIR$/views/css/registerlogin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/registerlogin.php" afterPath="$PROJECT_DIR$/views/registerlogin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/css/wall.css" afterPath="$PROJECT_DIR$/views/css/wall.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/wall.php" afterPath="$PROJECT_DIR$/views/wall.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="myspace.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +38,7 @@
       <file leaf-file-name="salamigardiner.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../test mapp/SalamiGardiner/salamigardiner.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="53" selection-start="526" selection-end="526" vertical-scroll-proportion="1.25" vertical-offset="135" max-vertical-offset="2925">
+            <state line="53" column="0" selection-start="2249" selection-end="2631" vertical-scroll-proportion="-14.375" vertical-offset="450" max-vertical-offset="2925">
               <folding>
                 <marker date="1420995483000" expanded="true" signature="201:523" placeholder="SELECT posts..posts..." />
                 <marker date="1420995483000" expanded="true" signature="4149:4187" placeholder="SELECT categ..categories..." />
@@ -45,19 +48,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/js/main.js">
+      <file leaf-file-name="profile.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/css/profile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="53" column="17" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="8670">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wall.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/wall.php">
+      <file leaf-file-name="RMB.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../Workspace/RMB/RMB.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="40" selection-start="3732" selection-end="3732" vertical-scroll-proportion="-15.0" vertical-offset="735" max-vertical-offset="1965">
+            <state line="9" column="16" selection-start="370" selection-end="370" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="855">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usercontroller.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/usercontroller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="0" selection-start="1845" selection-end="1845" vertical-scroll-proportion="-17.5" vertical-offset="345" max-vertical-offset="900">
+              <folding>
+                <marker date="1427383228000" expanded="true" signature="319:363" placeholder="SELECT * FRO..users..." />
+                <marker date="1427383228000" expanded="true" signature="805:849" placeholder="SELECT * FRO..users..." />
+                <marker date="1427383228000" expanded="true" signature="1280:1386" placeholder="SELECT * FRO..." />
+                <marker date="1427383228000" expanded="true" signature="1585:1691" placeholder="SELECT * FRO..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="0" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.9375" vertical-offset="135" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
@@ -66,43 +92,25 @@
       <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="36" selection-start="4438" selection-end="4438" vertical-scroll-proportion="-11.02" vertical-offset="724" max-vertical-offset="2130">
+            <state line="28" column="22" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-15.0" vertical-offset="60" max-vertical-offset="2355">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/css/profile.css">
+      <file leaf-file-name="wall.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/wall.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="250" column="17" selection-start="3944" selection-end="3944" vertical-scroll-proportion="0.0" vertical-offset="3488" max-vertical-offset="6690">
+            <state line="25" column="40" selection-start="1140" selection-end="1140" vertical-scroll-proportion="-13.125" vertical-offset="60" max-vertical-offset="1965">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wall.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="wall.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/css/wall.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="182" column="1" selection-start="2921" selection-end="2921" vertical-scroll-proportion="0.6841216" vertical-offset="2325" max-vertical-offset="5505">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registerlogin.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/css/registerlogin.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="30" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.0" vertical-offset="1283" max-vertical-offset="1905">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wall-temp.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/wall-temp.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="300">
+            <state line="28" column="23" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="5685">
               <folding />
             </state>
           </provider>
@@ -121,20 +129,24 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/views/registerlogin.php" />
         <option value="$PROJECT_DIR$/controllers/authcontroller.php" />
-        <option value="$PROJECT_DIR$/views/profile.php" />
-        <option value="$PROJECT_DIR$/views/wall.php" />
+        <option value="$PROJECT_DIR$/controllers/usercontroller.php" />
+        <option value="$PROJECT_DIR$/views/followers.php" />
+        <option value="$PROJECT_DIR$/views/registerlogin.php" />
         <option value="$PROJECT_DIR$/views/css/registerlogin.css" />
-        <option value="$PROJECT_DIR$/views/js/main.js" />
-        <option value="$PROJECT_DIR$/views/css/profile.css" />
         <option value="$PROJECT_DIR$/views/css/wall.css" />
+        <option value="$PROJECT_DIR$/views/js/main.js" />
+        <option value="$PROJECT_DIR$/views/css/followers.css" />
+        <option value="$PROJECT_DIR$/views/wall.php" />
+        <option value="$PROJECT_DIR$/views/profile.php" />
+        <option value="$PROJECT_DIR$/views/css/profile.css" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="18" />
+    <option name="y" value="27" />
     <option name="width" value="1280" />
     <option name="height" value="712" />
   </component>
@@ -228,6 +240,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -254,6 +284,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/img" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
@@ -277,12 +312,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="712" extended-state="6" />
+    <frame x="18" y="27" width="1280" height="712" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17851374" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -293,7 +329,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -317,30 +352,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/wall-temp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/registerlogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="65" selection-start="724" selection-end="724" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/authcontroller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="41" selection-start="1885" selection-end="1897" vertical-scroll-proportion="-28.125" vertical-offset="60" max-vertical-offset="1380">
-          <folding>
-            <marker date="1427314047000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1427314047000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../test mapp/SalamiGardiner/salamigardinerAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="193" selection-end="193" vertical-scroll-proportion="0.13204226" vertical-offset="0" max-vertical-offset="1695">
@@ -357,9 +368,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/wall-temp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/followers-temp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/followers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="0" selection-start="7610" selection-end="7610" vertical-scroll-proportion="-10.625" vertical-offset="1260" max-vertical-offset="1830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/wallcontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="579">
+          <folding>
+            <marker date="1427312283000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..posts..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/authcontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="40" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.45945945" vertical-offset="525" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/homecontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/registerlogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="14" selection-start="2471" selection-end="2471" vertical-scroll-proportion="-21.625" vertical-offset="81" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/css/registerlogin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="30" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1920">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../test mapp/SalamiGardiner/salamigardiner.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="53" selection-start="526" selection-end="526" vertical-scroll-proportion="1.25" vertical-offset="135" max-vertical-offset="2925">
+        <state line="53" column="0" selection-start="2249" selection-end="2631" vertical-scroll-proportion="-14.375" vertical-offset="450" max-vertical-offset="2925">
           <folding>
             <marker date="1420995483000" expanded="true" signature="201:523" placeholder="SELECT posts..posts..." />
             <marker date="1420995483000" expanded="true" signature="4149:4187" placeholder="SELECT categ..categories..." />
@@ -368,44 +437,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/css/followers.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="249" column="24" selection-start="3895" selection-end="3895" vertical-scroll-proportion="0.5945946" vertical-offset="3383" max-vertical-offset="4095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/usercontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1845" selection-end="1845" vertical-scroll-proportion="-17.5" vertical-offset="345" max-vertical-offset="900">
+          <folding>
+            <marker date="1427383228000" expanded="true" signature="319:363" placeholder="SELECT * FRO..users..." />
+            <marker date="1427383228000" expanded="true" signature="805:849" placeholder="SELECT * FRO..users..." />
+            <marker date="1427383228000" expanded="true" signature="1280:1386" placeholder="SELECT * FRO..." />
+            <marker date="1427383228000" expanded="true" signature="1585:1691" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/css/wall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="23" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="5685">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/wall.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="40" selection-start="3732" selection-end="3732" vertical-scroll-proportion="-15.0" vertical-offset="735" max-vertical-offset="1965">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/css/registerlogin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="30" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.0" vertical-offset="1283" max-vertical-offset="1905">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+        <state line="25" column="40" selection-start="1140" selection-end="1140" vertical-scroll-proportion="-13.125" vertical-offset="60" max-vertical-offset="1965">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="36" selection-start="4438" selection-end="4438" vertical-scroll-proportion="-11.02" vertical-offset="724" max-vertical-offset="2130">
+        <state line="28" column="22" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-15.0" vertical-offset="60" max-vertical-offset="2355">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/css/profile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="250" column="17" selection-start="3944" selection-end="3944" vertical-scroll-proportion="0.0" vertical-offset="3488" max-vertical-offset="6690">
+        <state line="53" column="17" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="8670">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/css/wall.css">
+    <entry file="file://$PROJECT_DIR$/../../Workspace/RMB/RMB.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="1" selection-start="2921" selection-end="2921" vertical-scroll-proportion="0.6841216" vertical-offset="2325" max-vertical-offset="5505">
+        <state line="9" column="16" selection-start="370" selection-end="370" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.9375" vertical-offset="135" max-vertical-offset="855">
           <folding />
         </state>
       </provider>

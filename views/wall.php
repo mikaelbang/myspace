@@ -14,8 +14,8 @@
         </div>
         <div id="menu">
             <div id="menuBorder">
-                <div class="menuItems">
-                    <a href="../wall/show" id="active" class="noStyleLinks"><p class="menuItemText">Wall</p></a>
+                <div class="menuItems" id="active">
+                    <a href="../wall/show"  class="noStyleLinks"><p class="menuItemText">Wall</p></a>
                 </div>
                 <div class="menuItems">
                     <a href="../user/show" class="noStyleLinks"><p class="menuItemText">Profile</p></a>
@@ -31,7 +31,7 @@
         <div id="wallContent">
             <div id="hiddenMenu">
                 <a href="#" class="noStyleLinks"><p class="hiddenMenuText">Edit Profile</p></a>
-                <a href="#" class="noStyleLinks"><p class="hiddenMenuText">Log Out</p></a>
+                <a href="../auth/logout" class="noStyleLinks"><p class="hiddenMenuText">Log Out</p></a>
             </div>
             <div id="underBorder">
                 <div class="underBorderItem">
@@ -63,7 +63,7 @@
                 <div class="statusUnderBorder">
                     <div class="showLikes">
                         <p class="showLikesText">13,900 L</p>
-                        <p class="showComments">45 C</p>
+                        <a href="#" class="noStyleLinks"><p class="showComments">45</p><img src="../../myspace/views/img/commentpic.png" class="commentPic"/></a>
                     </div>
                     <div class="statusButtons">
                         <input class="likeButton" type="submit" value="LIKE" name=""/>
@@ -110,7 +110,7 @@
                 <div class="statusUnderBorder">
                     <div class="showLikes">
                         <p class="showLikesText">1,300</p>
-                        <p class="showComments">321 C</p>
+                        <a href="#" class="noStyleLinks"><p class="showComments">45</p><img src="../../myspace/views/img/commentpic.png" class="commentPic"/></a>
                     </div>
                     <div class="statusButtons">
                         <input class="likeButton" type="submit" value="LIKE" name=""/>

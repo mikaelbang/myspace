@@ -15,11 +15,34 @@ $(document).ready(function(){
     });
 
     $("#rightMenuItem").click(function(){
+        event.preventDefault();
         $("#hiddenMenu").toggle();
     });
 
     $(".commentButton").click(function(){
         $(this).parent().parent().parent().siblings('.commentContent').toggle();
+    });
+
+    $(".postContent").click(function(){
+        $(".hiddenPostContent").css("display","inline-block");
+    });
+
+    $("#showSound").click(function(){
+        $(".writePost").css("display","none");
+        $(".postPhoto").css("display","none");
+        $(".postSound").css("display","inline-block");
+    });
+
+    $("#showPhoto").click(function(){
+        $(".writePost").css("display","none");
+        $(".postPhoto").css("display","inline-block");
+        $(".postSound").css("display","none");
+    });
+
+    $("#showText").click(function(){
+        $(".writePost").css("display","inline-block");
+        $(".postPhoto").css("display","none");
+        $(".postSound").css("display","none");
     });
 
 });

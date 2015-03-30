@@ -32,7 +32,7 @@
                         <input name="rep_password" class="inputs" type="password" placeholder="Repete password">
                         <select name="gender" class="gender">
                             <option class="genderOption" value="1">Male</option>
-                            <option value="2">Female</option>
+                            <option class="genderOption" value="2">Female</option>
                         </select>
                         <input type="submit" value="Sign up" name="register_button" class="registerButton"/>
                     </div>
