@@ -1,5 +1,4 @@
 <html>
-<<<<<<< HEAD
     <head>
         <title>Myspace</title>
         <link href="../../myspace/views/css/reset.css" rel="stylesheet" type="text/css"/>
@@ -54,7 +53,7 @@
                         <div class="statusUnderBorder">
                             <div class="showLikes">
                                 <p class="showLikesText">13,900 L</p>
-                                <p class="showComments">45 C</p>
+                                <a href="#" class="noStyleLinks"><p class="showComments">45</p><img src="../../myspace/views/img/commentpic.png" class="commentPic"/></a>
                             </div>
                             <div class="statusButtons">
                                 <input class="likeButton" type="submit" value="LIKE" name=""/>

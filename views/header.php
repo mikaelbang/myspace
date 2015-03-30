@@ -1,6 +1,6 @@
 <div id="menu">
     <div id="menuBorder">
-        <a href="../wall/show" id="active" class="noStyleLinks"><div class="menuItems">
+        <a href="../wall/show" class="noStyleLinks"><div class="menuItems">
             <p class="menuItemText">Wall</p>
         </div></a>
         <a href="../user/show" class="noStyleLinks"><div class="menuItems">
