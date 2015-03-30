@@ -16,7 +16,7 @@
             <div id="wallContent">
                 <div id="hiddenMenu">
                     <a href="#" class="noStyleLinks"><p class="hiddenMenuText">Edit Profile</p></a>
-                    <a href="#" class="noStyleLinks"><p class="hiddenMenuText">Log Out</p></a>
+                    <a href="../auth/logout" class="noStyleLinks"><p class="hiddenMenuText">Log Out</p></a>
                 </div>
                 <div class="profileContent">
                     <div class="profileInfo">

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d3e2af4-f298-42fc-99f8-6c9390319290" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/header.php" afterPath="$PROJECT_DIR$/views/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/js/main.js" afterPath="$PROJECT_DIR$/views/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/profile.php" afterPath="$PROJECT_DIR$/views/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/css/wall.css" afterPath="$PROJECT_DIR$/views/css/wall.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/wall.php" afterPath="$PROJECT_DIR$/views/wall.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/wallcontroller.php" afterPath="$PROJECT_DIR$/controllers/wallcontroller.php" />
     </list>
     <ignored path="myspace.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,46 +28,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="wallcontroller.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/wallcontroller.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="166" selection-start="862" selection-end="862" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="833">
+              <folding>
+                <marker date="1427716190103" expanded="true" signature="177:324" placeholder="SELECT * FRO..posts..." />
+                <marker date="1427716190103" expanded="true" signature="736:861" placeholder="SELECT * FRO..comments..." />
+                <marker date="1427716190103" expanded="true" signature="1282:1368" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="wall.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/wall.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="567" selection-end="567" vertical-scroll-proportion="-6.5384617" vertical-offset="85" max-vertical-offset="1955">
+            <state line="74" column="35" selection-start="4397" selection-end="4397" vertical-scroll-proportion="-17.346153" vertical-offset="807" max-vertical-offset="1513">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+            <state line="25" column="0" selection-start="683" selection-end="683" vertical-scroll-proportion="0.73402417" vertical-offset="0" max-vertical-offset="1496">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/profile.php">
+      <file leaf-file-name="salamigardiner.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../SalamiGardiner/js/salamigardiner.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="37" selection-start="717" selection-end="717" vertical-scroll-proportion="-6.5384617" vertical-offset="102" max-vertical-offset="2159">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/header.php">
+      <file leaf-file-name="brobook.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Brobook/js/brobook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.23817864" vertical-offset="0" max-vertical-offset="571">
+            <state line="30" column="47" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="1105">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wall.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/css/wall.css">
+      <file leaf-file-name="messagecontroller.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Brobook/controllers/messagecontroller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-11.2" vertical-offset="1046" max-vertical-offset="6171">
+            <state line="101" column="29" selection-start="4579" selection-end="4583" vertical-scroll-proportion="-13.076923" vertical-offset="1377" max-vertical-offset="2006">
+              <folding>
+                <marker date="1426933745003" expanded="true" signature="285:341" placeholder="INSERT INTO ..." />
+                <marker date="1426933745003" expanded="true" signature="570:659" placeholder="INSERT INTO ..." />
+                <marker date="1426933745003" expanded="true" signature="922:1013" placeholder="INSERT INTO ..." />
+                <marker date="1426933745003" expanded="true" signature="1298:1414" placeholder="INSERT INTO ..." />
+                <marker date="1426933745003" expanded="true" signature="2268:2448" placeholder="SELECT * FRO..conversations..." />
+                <marker date="1426933745003" expanded="true" signature="2616:2829" placeholder="SELECT * FRO..users..." />
+                <marker date="1426933745003" expanded="true" signature="3181:3241" placeholder="DELETE FROM ..." />
+                <marker date="1426933745003" expanded="true" signature="3405:3460" placeholder="DELETE FROM ..." />
+                <marker date="1426933745003" expanded="true" signature="3843:3959" placeholder="INSERT INTO ..." />
+                <marker date="1426933745003" expanded="true" signature="4791:5037" placeholder="SELECT messa..messages..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start_message.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Brobook/views/start_message.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="72" selection-start="3217" selection-end="3217" vertical-scroll-proportion="-5.6153846" vertical-offset="1027" max-vertical-offset="2057">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wall-temp.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/wall-temp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="340">
               <folding />
             </state>
           </provider>
@@ -87,19 +129,21 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/views/wall.php" />
-        <option value="$PROJECT_DIR$/views/profile.php" />
         <option value="$PROJECT_DIR$/views/css/wall.css" />
         <option value="$PROJECT_DIR$/views/header.php" />
+        <option value="$PROJECT_DIR$/views/profile.php" />
+        <option value="$PROJECT_DIR$/controllers/wallcontroller.php" />
+        <option value="$PROJECT_DIR$/views/wall.php" />
+        <option value="$PROJECT_DIR$/views/js/main.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1364" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -187,11 +231,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -205,6 +245,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -217,7 +270,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -225,10 +278,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25296736" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -239,6 +292,26 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -264,27 +337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/wall.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="567" selection-end="567" vertical-scroll-proportion="-6.5384617" vertical-offset="85" max-vertical-offset="1955">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="717" selection-end="717" vertical-scroll-proportion="-6.5384617" vertical-offset="102" max-vertical-offset="2159">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/css/wall.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="0" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-11.2" vertical-offset="1046" max-vertical-offset="6171">
@@ -294,7 +346,98 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.23817864" vertical-offset="0" max-vertical-offset="571">
+        <state line="15" column="6" selection-start="684" selection-end="684" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="43" selection-start="861" selection-end="861" vertical-scroll-proportion="0.35726795" vertical-offset="102" max-vertical-offset="2159">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/wall-temp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SalamiGardiner/salamigardiner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="77" selection-start="4614" selection-end="4632" vertical-scroll-proportion="0.6252189" vertical-offset="1122" max-vertical-offset="2550">
+          <folding>
+            <marker date="1427377453569" expanded="true" signature="-1:-1" placeholder="SELECT categ..categories..." />
+            <marker date="1427377453569" expanded="true" signature="-1:-1" placeholder="SELECT p.pos..posts..." />
+            <marker date="1427377453569" expanded="true" signature="-1:-1" placeholder="SELECT p.pos..posts..." />
+            <marker date="1427377453569" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..images..." />
+            <marker date="1427377453569" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..comments..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Brobook/views/start_message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="72" selection-start="3217" selection-end="3217" vertical-scroll-proportion="-5.6153846" vertical-offset="1027" max-vertical-offset="2057">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Brobook/controllers/messagecontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="29" selection-start="4579" selection-end="4583" vertical-scroll-proportion="-13.076923" vertical-offset="1377" max-vertical-offset="2006">
+          <folding>
+            <marker date="1426933745003" expanded="true" signature="285:341" placeholder="INSERT INTO ..." />
+            <marker date="1426933745003" expanded="true" signature="570:659" placeholder="INSERT INTO ..." />
+            <marker date="1426933745003" expanded="true" signature="922:1013" placeholder="INSERT INTO ..." />
+            <marker date="1426933745003" expanded="true" signature="1298:1414" placeholder="INSERT INTO ..." />
+            <marker date="1426933745003" expanded="true" signature="2268:2448" placeholder="SELECT * FRO..conversations..." />
+            <marker date="1426933745003" expanded="true" signature="2616:2829" placeholder="SELECT * FRO..users..." />
+            <marker date="1426933745003" expanded="true" signature="3181:3241" placeholder="DELETE FROM ..." />
+            <marker date="1426933745003" expanded="true" signature="3405:3460" placeholder="DELETE FROM ..." />
+            <marker date="1426933745003" expanded="true" signature="3843:3959" placeholder="INSERT INTO ..." />
+            <marker date="1426933745003" expanded="true" signature="4791:5037" placeholder="SELECT messa..messages..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SalamiGardiner/js/salamigardiner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/wallcontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="166" selection-start="862" selection-end="862" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="833">
+          <folding>
+            <marker date="1427716190103" expanded="true" signature="177:324" placeholder="SELECT * FRO..posts..." />
+            <marker date="1427716190103" expanded="true" signature="736:861" placeholder="SELECT * FRO..comments..." />
+            <marker date="1427716190103" expanded="true" signature="1282:1368" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Brobook/js/brobook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="47" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/wall.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="35" selection-start="4397" selection-end="4397" vertical-scroll-proportion="-17.346153" vertical-offset="807" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="683" selection-end="683" vertical-scroll-proportion="0.73402417" vertical-offset="0" max-vertical-offset="1496">
           <folding />
         </state>
       </provider>
