@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97e8b68f-8cd2-4428-b8fa-3160c8fc8983" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/css/followers.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/views/followers.php" afterPath="$PROJECT_DIR$/views/followers-temp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/followers.php" afterPath="$PROJECT_DIR$/views/followers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/js/main.js" afterPath="$PROJECT_DIR$/views/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/css/profile.css" afterPath="$PROJECT_DIR$/views/css/profile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/profile.php" afterPath="$PROJECT_DIR$/views/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/css/registerlogin.css" afterPath="$PROJECT_DIR$/views/css/registerlogin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/registerlogin.php" afterPath="$PROJECT_DIR$/views/registerlogin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/css/wall.css" afterPath="$PROJECT_DIR$/views/css/wall.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/wall.php" afterPath="$PROJECT_DIR$/views/wall.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="myspace.iws" />
@@ -34,89 +25,7 @@
     <favorites_list name="myspace" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="salamigardiner.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../test mapp/SalamiGardiner/salamigardiner.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="0" selection-start="2249" selection-end="2631" vertical-scroll-proportion="-14.375" vertical-offset="450" max-vertical-offset="2925">
-              <folding>
-                <marker date="1420995483000" expanded="true" signature="201:523" placeholder="SELECT posts..posts..." />
-                <marker date="1420995483000" expanded="true" signature="4149:4187" placeholder="SELECT categ..categories..." />
-                <marker date="1420995483000" expanded="true" signature="5842:5940" placeholder="SELECT comme..comments..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/css/profile.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="17" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="8670">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RMB.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Workspace/RMB/RMB.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="16" selection-start="370" selection-end="370" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="855">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usercontroller.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/usercontroller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="1845" selection-end="1845" vertical-scroll-proportion="-17.5" vertical-offset="345" max-vertical-offset="900">
-              <folding>
-                <marker date="1427383228000" expanded="true" signature="319:363" placeholder="SELECT * FRO..users..." />
-                <marker date="1427383228000" expanded="true" signature="805:849" placeholder="SELECT * FRO..users..." />
-                <marker date="1427383228000" expanded="true" signature="1280:1386" placeholder="SELECT * FRO..." />
-                <marker date="1427383228000" expanded="true" signature="1585:1691" placeholder="SELECT * FRO..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.9375" vertical-offset="135" max-vertical-offset="855">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="22" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-15.0" vertical-offset="60" max-vertical-offset="2355">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wall.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/wall.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="40" selection-start="1140" selection-end="1140" vertical-scroll-proportion="-13.125" vertical-offset="60" max-vertical-offset="1965">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wall.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/css/wall.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="23" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="5685">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -134,12 +43,12 @@
         <option value="$PROJECT_DIR$/views/followers.php" />
         <option value="$PROJECT_DIR$/views/registerlogin.php" />
         <option value="$PROJECT_DIR$/views/css/registerlogin.css" />
-        <option value="$PROJECT_DIR$/views/css/wall.css" />
-        <option value="$PROJECT_DIR$/views/js/main.js" />
         <option value="$PROJECT_DIR$/views/css/followers.css" />
         <option value="$PROJECT_DIR$/views/wall.php" />
         <option value="$PROJECT_DIR$/views/profile.php" />
         <option value="$PROJECT_DIR$/views/css/profile.css" />
+        <option value="$PROJECT_DIR$/views/js/main.js" />
+        <option value="$PROJECT_DIR$/views/css/wall.css" />
       </list>
     </option>
   </component>
@@ -194,88 +103,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -313,7 +140,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="18" y="27" width="1280" height="712" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -321,7 +148,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17851374" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17851374" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -426,17 +253,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../test mapp/SalamiGardiner/salamigardiner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="2249" selection-end="2631" vertical-scroll-proportion="-14.375" vertical-offset="450" max-vertical-offset="2925">
-          <folding>
-            <marker date="1420995483000" expanded="true" signature="201:523" placeholder="SELECT posts..posts..." />
-            <marker date="1420995483000" expanded="true" signature="4149:4187" placeholder="SELECT categ..categories..." />
-            <marker date="1420995483000" expanded="true" signature="5842:5940" placeholder="SELECT comme..comments..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/css/followers.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="249" column="24" selection-start="3895" selection-end="3895" vertical-scroll-proportion="0.5945946" vertical-offset="3383" max-vertical-offset="4095">
@@ -444,57 +260,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/usercontroller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1845" selection-end="1845" vertical-scroll-proportion="-17.5" vertical-offset="345" max-vertical-offset="900">
-          <folding>
-            <marker date="1427383228000" expanded="true" signature="319:363" placeholder="SELECT * FRO..users..." />
-            <marker date="1427383228000" expanded="true" signature="805:849" placeholder="SELECT * FRO..users..." />
-            <marker date="1427383228000" expanded="true" signature="1280:1386" placeholder="SELECT * FRO..." />
-            <marker date="1427383228000" expanded="true" signature="1585:1691" placeholder="SELECT * FRO..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/css/wall.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="23" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="5685">
+        <state line="308" column="30" selection-start="4986" selection-end="4986" vertical-scroll-proportion="0.5067568" vertical-offset="4320" max-vertical-offset="5685">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/wall.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="40" selection-start="1140" selection-end="1140" vertical-scroll-proportion="-13.125" vertical-offset="60" max-vertical-offset="1965">
+        <state line="25" column="40" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.27027026" vertical-offset="225" max-vertical-offset="1965">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="22" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-15.0" vertical-offset="60" max-vertical-offset="2355">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/css/profile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="17" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="8670">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Workspace/RMB/RMB.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="16" selection-start="370" selection-end="370" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="855">
+        <state line="28" column="22" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.6486486" vertical-offset="60" max-vertical-offset="2355">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.9375" vertical-offset="135" max-vertical-offset="855">
+        <state line="26" column="31" selection-start="825" selection-end="825" vertical-scroll-proportion="0.4054054" vertical-offset="150" max-vertical-offset="855">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/usercontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.7567568" vertical-offset="345" max-vertical-offset="900">
+          <folding>
+            <marker date="1427383228000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1427383228000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1427383228000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1427383228000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Workspace/RMB/RMB.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="16" selection-start="370" selection-end="370" vertical-scroll-proportion="0.23767605" vertical-offset="0" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/css/profile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="17" selection-start="771" selection-end="771" vertical-scroll-proportion="0.22804055" vertical-offset="660" max-vertical-offset="8670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test mapp/SalamiGardiner/salamigardiner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="2249" selection-end="2631" vertical-scroll-proportion="0.6216216" vertical-offset="450" max-vertical-offset="2925">
+          <folding>
+            <marker date="1420995483000" expanded="true" signature="-1:-1" placeholder="SELECT posts..posts..." />
+            <marker date="1420995483000" expanded="true" signature="-1:-1" placeholder="SELECT categ..categories..." />
+            <marker date="1420995483000" expanded="true" signature="-1:-1" placeholder="SELECT comme..comments..." />
+          </folding>
         </state>
       </provider>
     </entry>

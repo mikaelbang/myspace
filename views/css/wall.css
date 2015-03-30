@@ -306,7 +306,7 @@ body{
 .commentContent{
     width:800px;
     text-align: center;
-    background-color: rgba(0,0,0,0.6);
+    background-color: #1c8591;
     margin: 0 auto;
     display: none;
 }
