@@ -465,6 +465,11 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    outline: none;
+}
+
+.yourCommentButton:active{
+    background-color: darkred;
 }
 
 #active{
@@ -614,7 +619,7 @@
 .writePost{
     width: 600px;
     height: 40px;
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 15px;
     outline: none;
     border: none;
