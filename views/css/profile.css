@@ -1,7 +1,7 @@
 body{
     background: url("../img/musicbckr.png");
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato 400 classic', sans-serif;
     background-attachment: fixed;
 }
 
@@ -11,12 +11,12 @@ body{
 
 #header{
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
-#logo{
-    font-size: 80px;
+.logoPic{
+    width: 400px;
 }
 
 #menu{
@@ -91,7 +91,6 @@ body{
     background-color: rgba(0,0,0,0.6);
     margin: 0 auto;
     padding-bottom: 30px;
-    padding-top: 30px;
 }
 
 #hiddenMenu{
@@ -100,11 +99,10 @@ body{
     border-left: 1px solid white;
     border-right: 1px solid white;
     width: 100px;
-    margin-left: 799px;
-    margin-top: -30px;
     position: absolute;
-
+    margin-left: 758px;
 }
+
 
 .hiddenMenuText{
     padding-left: 10px;
@@ -170,7 +168,7 @@ body{
     display: inline-block;
     vertical-align: top;
     color: white;
-    background-color: #cc4148;
+    background-color: #1c8591;
     width: 150px;
     border: 0;
     border-radius: 5px;
@@ -184,14 +182,14 @@ body{
 
 
 #followButton:active{
-    background-color: darkred;
+    background-color: #86c3ca;
 }
 
 #unfollowButton{
     display: none;
     vertical-align: top;
     color: white;
-    background-color: #1c8591;
+    background-color: #cc4148;
     width: 150px;
     border: 0;
     border-radius: 5px;
@@ -203,7 +201,7 @@ body{
 }
 
 #unfollowButton:active{
-    background-color: #86c3ca;
+    background-color: darkred;
 }
 
 

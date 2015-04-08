@@ -49,4 +49,24 @@ class Usercontroller{
 
         require_once "views/followers.php";
     }
+
+    public function updateAction(){
+
+        $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
+
+        if(isset($_POST["save_button"])){
+            $updateProfileStm = $db->prepare('UPDATE users SET first_name = :firstname, last_name = :lastname, profile_img = :p_img, about = :about WHERE user_id = :user_id');
+            $updateProfileStm->bindParam(":user_id", $_SESSION["user"]->user_id, PDO::PARAM_INT);
+            $updateProfileStm->bindParam(":firstname", $_POST["first_name"]);
+            $updateProfileStm->bindParam(":lastname", $_POST["last_name"]);
+            $updateProfileStm->bindParam(":p_img", $_POST["profile_img"]);
+            $updateProfileStm->bindParam(":about", $_POST["about"]);
+
+            if($updateProfileStm->execute()){
+            header("location:../../myspace/user/show");
+
+
+            }
+        }
+    }
 }

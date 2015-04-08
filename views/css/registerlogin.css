@@ -1,6 +1,6 @@
 body{
     background: url("../img/musicbckr.png");
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato 400 classic', sans-serif;
     color: white;
 
 }
@@ -9,12 +9,13 @@ body{
     width: 500px;
     text-align: center;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 20px;
 }
 
 
-.AW{
-    font-size: 100px;
+.logoPic{
+    width: 400px;
 }
 
 #content{

@@ -10,7 +10,7 @@
     <body>
         <div id="wallpaper">
             <div id="header">
-                <div class="logo"><p class="AW">AW</p></div>
+                <div class="logo"><img class="logoPic" src="../../myspace/views/img/bluesounder.png"/></div>
             </div>
             <div id="content">
                 <?php

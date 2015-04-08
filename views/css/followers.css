@@ -1,7 +1,7 @@
 body{
     background: url("../img/musicbckr.png");
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato 400 classic', sans-serif;
     background-attachment: fixed;
 }
 
@@ -11,24 +11,24 @@ body{
 
 #header{
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
-#logo{
-    font-size: 80px;
+.logoPic{
+    width: 400px;
 }
 
 #menu{
     height: 40px;
     width: 900px;
-    background-color: #86c3ca;
     margin: 0 auto;
 }
 
 #menuBorder{
-    margin-left: 40px;
+    padding-left: 40px;
     width: 860px;
+    background-color: #86c3ca;
 }
 
 .menuItems{
@@ -61,9 +61,8 @@ body{
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 15px;
-    text-align: right;
-    margin-left: 20%;
     font-size: 12px;
+    float: right;
 }
 
 #rightMenuItem:hover{
@@ -86,7 +85,6 @@ body{
     background-color: rgba(0,0,0,0.6);
     margin: 0 auto;
     padding-bottom: 30px;
-    padding-top: 30px;
 }
 
 #hiddenMenu{
@@ -95,9 +93,10 @@ body{
     border-left: 1px solid white;
     border-right: 1px solid white;
     width: 100px;
-    margin-left: 799px;
-
+    position: absolute;
+    margin-left: 758px;
 }
+
 
 .hiddenMenuText{
     padding-left: 10px;
@@ -161,26 +160,26 @@ body{
 
 .accept{
     border: none;
-    background-color: #cc4148;
-    color: white;
-    outline: none;
-    cursor: pointer;
-}
-
-.accept:active{
-    background-color: darkred;
-}
-
-.decline{
-    border: none;
     background-color: #1c8591;
     color: white;
     outline: none;
     cursor: pointer;
 }
 
-.decline:active{
+.accept:active{
     background-color: #86c3ca;
+}
+
+.decline{
+    border: none;
+    background-color: #cc4148;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.decline:active{
+    background-color: darkred;
 }
 
 .follower{
