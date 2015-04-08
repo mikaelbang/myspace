@@ -155,6 +155,7 @@
     margin-bottom: 15px;
     font-size: 14px;
     padding-left: 15px;
+    outline: none;
 }
 
 .editAbout{
@@ -166,6 +167,7 @@
     padding-left: 15px;
     padding-top: 10px;
     margin-bottom: 15px;
+    outline: none;
 }
 
 .editButtons{

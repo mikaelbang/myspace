@@ -34,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="profile.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="26" selection-start="1996" selection-end="1996" vertical-scroll-proportion="-10.625" vertical-offset="180" max-vertical-offset="1530">
+            <state line="29" column="26" selection-start="1996" selection-end="1996" vertical-scroll-proportion="-0.16791044" vertical-offset="525" max-vertical-offset="1530">
               <folding />
             </state>
           </provider>
@@ -46,7 +46,7 @@
       <file leaf-file-name="usercontroller.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Brobook/controllers/usercontroller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="78" selection-start="5066" selection-end="5067" vertical-scroll-proportion="-11.708333" vertical-offset="1729" max-vertical-offset="2610">
+            <state line="121" column="41" selection-start="4576" selection-end="4576" vertical-scroll-proportion="-3.5833333" vertical-offset="1729" max-vertical-offset="2610">
               <folding>
                 <marker date="1427138842000" expanded="true" signature="1193:1299" placeholder="INSERT INTO ..." />
                 <marker date="1427138842000" expanded="true" signature="2094:2159" placeholder="SELECT * FRO..users..." />
@@ -70,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="471" column="30" selection-start="7649" selection-end="7649" vertical-scroll-proportion="0.4450262" vertical-offset="6810" max-vertical-offset="13245">
+            <state line="169" column="17" selection-start="2731" selection-end="2731" vertical-scroll-proportion="0.0" vertical-offset="12702" max-vertical-offset="13275">
               <folding />
             </state>
           </provider>
@@ -559,29 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Brobook/controllers/usercontroller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="78" selection-start="5066" selection-end="5067" vertical-scroll-proportion="-11.708333" vertical-offset="1729" max-vertical-offset="2610">
-          <folding>
-            <marker date="1427138842000" expanded="true" signature="1193:1299" placeholder="INSERT INTO ..." />
-            <marker date="1427138842000" expanded="true" signature="2094:2159" placeholder="SELECT * FRO..users..." />
-            <marker date="1427138842000" expanded="true" signature="3174:3218" placeholder="SELECT * FRO..users..." />
-            <marker date="1427138842000" expanded="true" signature="3327:3487" placeholder="SELECT * FRO..users..." />
-            <marker date="1427138842000" expanded="true" signature="3903:4017" placeholder="SELECT * FRO..users..." />
-            <marker date="1427138842000" expanded="true" signature="4402:4421" placeholder="SELECT * FRO..users..." />
-            <marker date="1427138842000" expanded="true" signature="4877:4985" placeholder="UPDATE users..." />
-            <marker date="1427138842000" expanded="true" signature="5850:5892" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Brobook/views/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="12" selection-start="3398" selection-end="3398" vertical-scroll-proportion="-34.833332" vertical-offset="349" max-vertical-offset="1335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/usercontroller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="45" selection-start="2587" selection-end="2587" vertical-scroll-proportion="-14.208333" vertical-offset="619" max-vertical-offset="1155">
@@ -593,13 +570,6 @@
             <marker date="1427982678000" expanded="true" signature="2015:2141" placeholder="UPDATE users..." />
             <marker date="1427982678000" expanded="true" signature="2021:2141" placeholder="SELECT * FRO..users..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="26" selection-start="1996" selection-end="1996" vertical-scroll-proportion="-10.625" vertical-offset="180" max-vertical-offset="1530">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -617,6 +587,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../Brobook/views/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="12" selection-start="3398" selection-end="3398" vertical-scroll-proportion="-34.833332" vertical-offset="349" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Brobook/controllers/usercontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="41" selection-start="4576" selection-end="4576" vertical-scroll-proportion="-3.5833333" vertical-offset="1729" max-vertical-offset="2610">
+          <folding>
+            <marker date="1427138842000" expanded="true" signature="1193:1299" placeholder="INSERT INTO ..." />
+            <marker date="1427138842000" expanded="true" signature="2094:2159" placeholder="SELECT * FRO..users..." />
+            <marker date="1427138842000" expanded="true" signature="3174:3218" placeholder="SELECT * FRO..users..." />
+            <marker date="1427138842000" expanded="true" signature="3327:3487" placeholder="SELECT * FRO..users..." />
+            <marker date="1427138842000" expanded="true" signature="3903:4017" placeholder="SELECT * FRO..users..." />
+            <marker date="1427138842000" expanded="true" signature="4402:4421" placeholder="SELECT * FRO..users..." />
+            <marker date="1427138842000" expanded="true" signature="4877:4985" placeholder="UPDATE users..." />
+            <marker date="1427138842000" expanded="true" signature="5850:5892" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="169" column="17" selection-start="2731" selection-end="2731" vertical-scroll-proportion="0.0" vertical-offset="12702" max-vertical-offset="13275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/wall.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="18" selection-start="5091" selection-end="5091" vertical-scroll-proportion="-19.375" vertical-offset="870" max-vertical-offset="1470">
@@ -624,9 +624,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/css/main.css">
+    <entry file="file://$PROJECT_DIR$/views/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="471" column="30" selection-start="7649" selection-end="7649" vertical-scroll-proportion="0.4450262" vertical-offset="6810" max-vertical-offset="13245">
+        <state line="29" column="26" selection-start="1996" selection-end="1996" vertical-scroll-proportion="-0.16791044" vertical-offset="525" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
