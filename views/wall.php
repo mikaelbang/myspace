@@ -49,14 +49,8 @@
                 <div class="statuses">
                     <div class="statusBorder">
                         <p class="statusBorderText"><?php echo($posts[$post]['created'])?></p>
-                    </div>
-                    <div class="statusPosts">
-                        <p class="statusPostsText"><?php echo($posts[$post]['text'])?></p>
-                    </div>
-                    <div class="statusPosts">
-                        <img class="statusPostsPhoto" src=""/>
-                    </div>
-                </div>
+
+
                 <?php
                 $comment_count = 0;
                 for($k = 0; $k < count($comments); $k++){
@@ -105,7 +99,6 @@
                 </div>
         <?php
         }?>
-
         </div>
     </div>
 </div>

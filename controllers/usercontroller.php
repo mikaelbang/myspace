@@ -21,9 +21,8 @@ class Usercontroller{
         $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
         //Riktiga bindParam parametern
         //$_POST["user_id"]
-        $userId = 2;
         $OtherProfileStm = $db->prepare('SELECT * FROM users WHERE user_id = :user_id');
-        $OtherProfileStm->bindParam(":user_id", $userId, PDO::PARAM_INT);
+        $OtherProfileStm->bindParam(":user_id", $_POST["hidden_user_id"], PDO::PARAM_INT);
         $OtherProfileStm->execute();
         $user = $OtherProfileStm->fetchObject();
         require_once "views/other_user.php";
@@ -33,20 +32,133 @@ class Usercontroller{
 
         $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
 
-        //$_SESSION['user']->user_id
-        $userId = 3;
-        $followersStm = $db->prepare('SELECT * FROM `followers` AS F JOIN users AS U ON (U.user_id = F.follower) WHERE F.followee = :currentUser');
-        $followersStm->bindParam(":currentUser", $userId, PDO::PARAM_STR);
+        $followersStm = $db->prepare('SELECT * FROM `followers` AS F JOIN users AS U ON (U.user_id = F.follower) WHERE F.followee = :currentUser AND F.status = 1');
+        $followersStm->bindParam(":currentUser", $_SESSION['user']->user_id);
         $followersStm->execute();
 
         $followers = $followersStm->fetchAll();
 
-        $followsStm = $db->prepare('SELECT * FROM `followers` AS F JOIN users AS U ON (U.user_id = F.followee) WHERE F.follower = :currentUser');
-        $followsStm->bindParam(":currentUser", $userId, PDO::PARAM_STR);
+        $followsStm = $db->prepare('SELECT * FROM `followers` AS F JOIN users AS U ON (U.user_id = F.followee) WHERE F.follower = :currentUser AND F.status = 1');
+        $followsStm->bindParam(":currentUser", $_SESSION['user']->user_id);
         $followsStm->execute();
 
-        $Ifollow = $followsStm->fetchAll();
+        $iFollow = $followsStm->fetchAll();
+
+        $showFollowRequestStm = $db->prepare("SELECT * FROM users JOIN followers ON (followers.follower = users.user_id) WHERE followers.followee = :currentUser AND followers.status = 0");
+        $showFollowRequestStm->bindParam(":currentUser", $_SESSION["user"]->user_id);
+        $showFollowRequestStm->execute();
+        $requests = $showFollowRequestStm->fetchAll();
 
         require_once "views/followers.php";
+    }
+
+    public function followAction(){
+
+
+
+        $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
+
+
+        $initial_status = 0;
+
+
+        if(isset($_POST["other_user_button"])){
+            $this->otherAction();
+        }
+        if(isset($_POST["follow_button"])){
+            $checkFollowerStm = $db->prepare("SELECT * FROM followers WHERE (follower = :currentUser AND followee = :user_id)");
+            $checkFollowerStm->bindParam(":currentUser", $_SESSION["user"]->user_id);
+            $checkFollowerStm->bindParam(":user_id", $_POST["hidden_user_id"]);
+            $checkFollowerStm->execute();
+
+            if($checkFollowerStm->rowCount() == 0){
+                if($_POST["hidden_user_id"] != $_SESSION["user"]->user_id){
+                    $addFriendStm = $db->prepare("INSERT INTO followers(follower, followee, status) VALUES (:follower, :followee, :status)");
+                    $addFriendStm->bindParam(":follower", $_SESSION["user"]->user_id);
+                    $addFriendStm->bindParam(":followee", $_POST["hidden_user_id"]);
+                    $addFriendStm->bindParam(":status", $initial_status);
+                    $addFriendStm->execute();
+                }
+                else{
+                    echo("You can't follow yourself");
+                }
+            }
+            else {
+                echo("Already following");
+            }
+        }
+        header("location:../user/followers");
+    }
+
+    public function unFollowAction(){
+
+        $db = new PDO("mysql:host=localhost;dbname=myspace;charset=utf8", "root", "root");
+
+        if(isset($_POST["unFollow_button"])){
+            $unFollowStm = $db->prepare("DELETE FROM followers WHERE followers.follower = :currentUser AND followers.followee = :user_id");
+            $unFollowStm->bindParam("currentUser", $_SESSION["user"]->user_id);
+            $unFollowStm->bindParam("user_id", $_POST["hidden_user_id"]);
+            $unFollowStm->execute();
+        }
+        header("location:../user/followers");
+
+    }
+
+    public function acceptAction(){
+
+        $db = new PDO("mysql:host=localhost;dbname=myspace;charset=utf8", "root", "root");
+        $accepted = 1;
+
+        if(isset($_POST["accept_button"])){
+            $acceptStm = $db->prepare("UPDATE followers SET status = :accepted WHERE follower = :user_id AND followee = :currentUser");
+            $acceptStm->bindParam(":accepted", $accepted);
+            $acceptStm->bindParam(":user_id", $_POST["hid_user_id"]);
+            $acceptStm->bindParam(":currentUser", $_SESSION["user"]->user_id);
+            $acceptStm->execute();
+        }
+        header("location:../user/followers");
+
+    }
+
+    public function declineAction(){
+
+        $db = new PDO("mysql:host=localhost;dbname=myspace;charset=utf8", "root", "root");
+        $declined = 2;
+
+        $declinedStm = $db->prepare("UPDATE followers SET status = :declined");
+        $declinedStm->bindParam(":declined", $declined);
+        $declinedStm->execute();
+    }
+
+
+    private function requests(){
+
+        $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
+
+        $showFollowRequestStm = $db->prepare("SELECT * FROM users JOIN followers ON (followers.follower = users.user_id) WHERE followers.followee = :currentUser AND followers.status = 0");
+        $showFollowRequestStm->bindParam(":currentUser", $_SESSION["user"]->user_id);
+        $showFollowRequestStm->execute();
+        $requests = $showFollowRequestStm->fetchAll();
+        return $requests;
+    }
+
+    public function updateAction(){
+
+        $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
+
+        if(isset($_POST["save_button"])){
+            $updateProfileStm = $db->prepare('UPDATE users SET first_name = :firstname, last_name = :lastname, profile_img = :p_img, about = :about WHERE user_id = :user_id');
+            $updateProfileStm->bindParam(":user_id", $_SESSION["user"]->user_id, PDO::PARAM_INT);
+            $updateProfileStm->bindParam(":firstname", $_POST["first_name"]);
+            $updateProfileStm->bindParam(":lastname", $_POST["last_name"]);
+            $updateProfileStm->bindParam(":p_img", $_POST["profile_img"]);
+            $updateProfileStm->bindParam(":about", $_POST["about"]);
+
+            if($updateProfileStm->execute()){
+            header("location:../../myspace/user/show");
+
+
+            }
+        }
     }
 }
