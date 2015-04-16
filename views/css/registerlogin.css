@@ -1,6 +1,6 @@
 body{
     background: url("../img/musicbckr.png");
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato 400 classic', sans-serif;
     color: white;
 
 }
@@ -101,8 +101,8 @@ body{
 }
 
 .genderOption{
-    background-color: #1c8591;
-    color: white;
+    /*background-color: #1c8591;*/
+    color: #1c8591;
 }
 
 .registerButton{
