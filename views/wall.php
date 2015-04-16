@@ -1,10 +1,6 @@
 
     <?php include "header.php" ?>
     <div id="wallContent">
-        <div id="hiddenMenu">
-            <a href="#" class="noStyleLinks"><p class="hiddenMenuText">Edit Profile</p></a>
-            <a href="../auth/logout" class="noStyleLinks"><p class="hiddenMenuText">Log Out</p></a>
-        </div>
         <div id="underBorder">
             <div class="underBorderItem">
                 <input class="underBorderText" type="submit" value="SOUND" name="sort_sound"/>
@@ -20,7 +16,6 @@
         <div class="statusContent">
         <?php
         for($post = 0; $post < count($posts); $post++){
-
                 if($posts[$post]["profile_img"] == null){
                     $picture = "../../myspace/views/img/anonym.png";
                 }
@@ -35,7 +30,14 @@
                 <div class="statuses">
                     <div class="statusBorder">
                         <p class="statusBorderText"><?php echo($posts[$post]['created'])?></p>
-
+                    </div>
+                    <div class="statusPosts">
+                        <p class="statusPostsText"><?php echo($posts[$post]['text'])?></p>
+                    </div>
+                    <div class="statusPosts">
+                        <img class="statusPostsPhoto" src=""/>
+                    </div>
+                </div>
 
                 <?php
                 $comment_count = 0;
@@ -87,7 +89,6 @@
         }?>
         </div>
     </div>
-</div>
-        </div>
+
 </body>
 </html>
