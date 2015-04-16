@@ -30,6 +30,11 @@ $(document).ready(function(){
         //event.preventDefault();
 
 
+    $(this).parent().parent().next('.commentContent').animate({height: 'toggle'});
+        //$(this).parent().parent().siblings('.commentContent').find('.othersComments').empty();
+
+    });
+
     $("#cancelButton").click(function(){
         $("#page-cover").css("display","none");
         $("#editContent").css("display","none")
@@ -38,15 +43,6 @@ $(document).ready(function(){
 
     $(".editAbout").click(function(){
         $(".editAbout").css("height","100px");
-    });
-
-    $(this).parent().parent().next('.commentContent').toggle();
-        //$(this).parent().parent().siblings('.commentContent').find('.othersComments').empty();
-
-    $(this).find('.commentButton').on('click', function(){
-        $(this).parent().parent().siblings().closest('.commentContent').animate({height: 'toggle'});
-
-
     });
 
 
@@ -159,7 +155,6 @@ $(document).ready(function(){
         });
     }
 
-});
 
 });
 

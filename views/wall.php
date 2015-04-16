@@ -1,18 +1,4 @@
-<html>
-<head>
-    <title>Myspace</title>
-    <link href="../../myspace/views/css/reset.css" rel="stylesheet" type="text/css"/>
-    <link href="../../myspace/views/css/wall.css" rel="stylesheet" type="text/css"/>
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="../../myspace/views/js/main.js"></script>
-</head>
-<body>
-<div id="wallpaper">
-    <div id="header">
-        <img class="logoPic" src="../../myspace/views/img/sounder.png"/>
-    </div>
+
     <?php include "header.php" ?>
     <div id="wallContent">
         <div id="hiddenMenu">
@@ -102,5 +88,6 @@
         </div>
     </div>
 </div>
+        </div>
 </body>
 </html>
