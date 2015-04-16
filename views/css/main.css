@@ -631,7 +631,7 @@
 .postPhoto{
     width: 600px;
     height: 40px;
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 15px;
     outline: none;
     border: none;
@@ -641,7 +641,7 @@
 .postSound{
     width: 600px;
     height: 40px;
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 15px;
     outline: none;
     border: none;
@@ -768,6 +768,7 @@
     color: white;
     outline: none;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 .accept:active{
@@ -780,6 +781,7 @@
     color: white;
     outline: none;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 .decline:active{
@@ -792,6 +794,7 @@
     margin-top: 30px;
     display: inline-block;
     margin-left: 15px;
+    vertical-align: top;
 }
 
 #pushFollower{
@@ -846,6 +849,7 @@
     cursor: pointer;
     outline: none;
     color: white;
+    border-radius: 3px;
 }
 
 .miniFollowButton{
@@ -857,6 +861,7 @@
     cursor: pointer;
     outline: none;
     color: white;
+    border-radius: 3px;
 }
 
 .miniUnfollow:active{

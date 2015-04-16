@@ -19,9 +19,9 @@
                                 <a href="../../myspace/user/followers" class="noStyleLinks"><p class="followsText">Followers</p></a>
                             </div>
                             <div class="followRequest">
-                                <a class="noStyleLinks"><p class="followRequestText">You have ? requests</p></a>
+                                <a class="noStyleLinks" href="../../myspace/user/followers"><p class="followRequestText">You have ? requests</p></a>
                             </div>
-                            <input type="submit" name="" id="followButton" value="FOLLOW"/>
+                            <input type="submit" name="follow_button" id="followButton" value="FOLLOW"/>
                             <input type="submit" name="" id="unfollowButton" value="UNFOLLOW"/>
                             <div class="about">
                                 <p class="aboutText">Hej jag heter Mårten Claesson och jag är mest känd som en främling. Jag har ofta hängslen på mig men ibland vill man ju bara "Go Nuts" så att säga och ha på sig vanliga braxor. Jag jamar ofta på fritiden</p>
