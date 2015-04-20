@@ -692,7 +692,45 @@
 
 }
 
+.photoButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+    vertical-align: top;
+    color: white;
+    background-color: #cc4148;
+    width: 150px;
+    border: 0;
+    border-radius: 5px;
+    height: 22px;
+    cursor: pointer;
+    outline: none;
+}
+
+.soundButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+    vertical-align: top;
+    color: white;
+    background-color: #cc4148;
+    width: 150px;
+    border: 0;
+    border-radius: 5px;
+    height: 22px;
+    cursor: pointer;
+    outline: none;
+}
+
 .postButton:active{
+    background-color: darkred;
+}
+
+.soundButton:active{
+    background-color: darkred;
+}
+
+.photoButton:active{
     background-color: darkred;
 }
 

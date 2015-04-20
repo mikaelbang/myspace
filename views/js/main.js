@@ -113,18 +113,30 @@ $(document).ready(function(){
         $(".writePost").css("display","none");
         $(".postPhoto").css("display","none");
         $(".postSound").css("display","inline-block");
+        $(".soundButton").css("display","inline-block");
+        $(".photoButton").css("display","none");
+        $(".postButton").css("display","none");
+
     });
 
     $("#showPhoto").click(function(){
         $(".writePost").css("display","none");
         $(".postPhoto").css("display","inline-block");
         $(".postSound").css("display","none");
+        $(".photoButton").css("display","inline-block");
+        $(".soundButton").css("display","none");
+        $(".postButton").css("display","none");
+
     });
 
     $("#showText").click(function(){
         $(".writePost").css("display","inline-block");
         $(".postPhoto").css("display","none");
         $(".postSound").css("display","none");
+        $(".postButton").css("display","inline-block");
+        $(".soundButton").css("display","none");
+        $(".photoButton").css("display","none");
+
     });
 
 

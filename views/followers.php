@@ -56,7 +56,7 @@
                 </div>
                 <div class="follower">
                     <div class="followerBorder">
-                        <p class="followerBorderText">Follows</p>
+                        <p class="followerBorderText">Follow</p>
                     </div>
                     <?php
                         foreach($iFollow as $follow){
