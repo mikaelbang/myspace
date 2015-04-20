@@ -102,8 +102,8 @@ body{
 }
 
 .genderOption{
-    background-color: #1c8591;
-    color: white;
+    /*background-color: #1c8591;*/
+    color: #1c8591;
 }
 
 .registerButton{

@@ -25,6 +25,16 @@ $(document).ready(function(){
         $("#page-cover").css("display","block")
     });
 
+    $('.commentButton').on('click', function(){
+
+        //event.preventDefault();
+
+
+    $(this).parent().parent().next('.commentContent').animate({height: 'toggle'});
+        //$(this).parent().parent().siblings('.commentContent').find('.othersComments').empty();
+
+    });
+
     $("#cancelButton").click(function(){
         $("#page-cover").css("display","none");
         $("#editContent").css("display","none")
@@ -33,13 +43,6 @@ $(document).ready(function(){
 
     $(".editAbout").click(function(){
         $(".editAbout").css("height","100px");
-    });
-
-
-    $(this).find('.commentButton').on('click', function(){
-        $(this).parent().parent().siblings().closest('.commentContent').animate({height: 'toggle'});
-
-
     });
 
 
@@ -135,6 +138,34 @@ $(document).ready(function(){
         $(".photoButton").css("display","none");
 
     });
+
+
+    function ajax(comment){
+
+        $.ajax({
+            type: 'POST',
+            url: '../wall/getComments',
+            dataType: 'json',
+            data: comment,
+            success: function(comments){
+
+                for(var i = 0; i < comments.length; i++){
+                    var c = comments[i];
+                    var p_id = c.post_id;
+
+                    $('#others_comments'+ c.post_id +'').prepend('<div class="othersCommentsBorder">' +
+                        '<p class="commentBorderText">' + c.first_name + " " + c.last_name + " || " + c.created + '</p>' +
+                        '</div>' +
+                        '<div class="othersCommentContent">' +
+                        '<p class="othersCommentText">' + c.content + '</p>' +
+                        '</div>');
+                }
+            },
+            error: function(){
+                alert('Something went wrong');
+            }
+        });
+    }
 
 
 });
