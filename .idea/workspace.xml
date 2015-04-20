@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="9d3e2af4-f298-42fc-99f8-6c9390319290" name="Default" comment="">
 <<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/css/followers.css" afterPath="$PROJECT_DIR$/views/css/followers.css" />
@@ -19,6 +20,9 @@
 >>>>>>> origin/rillvar
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
+=======
+    <list default="true" id="9d3e2af4-f298-42fc-99f8-6c9390319290" name="Default" comment="" />
+>>>>>>> Stashed changes
     <ignored path="myspace.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,6 +43,7 @@
     <favorites_list name="myspace" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <leaf />
 =======
@@ -137,6 +142,9 @@
       </file>
     </leaf>
 >>>>>>> origin/rillvar
+=======
+    <leaf />
+>>>>>>> Stashed changes
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -181,6 +189,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -191,6 +200,12 @@
     <option name="width" value="1280" />
     <option name="height" value="711" />
 >>>>>>> origin/rillvar
+=======
+    <option name="x" value="-2" />
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="712" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -342,6 +357,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
@@ -349,6 +365,10 @@
     <frame x="0" y="23" width="1280" height="711" extended-state="6" />
     <editor active="true" />
 >>>>>>> origin/rillvar
+=======
+    <frame x="-2" y="23" width="1280" height="712" extended-state="0" />
+    <editor active="false" />
+>>>>>>> Stashed changes
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -356,11 +376,15 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 =======
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2536349" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26494345" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> origin/rillvar
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25686592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> Stashed changes
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -412,6 +436,7 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/views/wall.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -419,20 +444,32 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3757" />
 =======
         <state line="21" column="40" selection-start="1001" selection-end="1035" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1470">
+=======
+    <entry file="file://$PROJECT_DIR$/views/wall.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="18" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
 =======
 >>>>>>> origin/rillvar
     <entry file="file://$PROJECT_DIR$/views/followers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="68" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1980">
+=======
+    <entry file="file://$PROJECT_DIR$/views/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="122" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2160">
+>>>>>>> Stashed changes
           <folding />
         </state>
 >>>>>>> origin/rillvar
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/controllers/wallcontroller.php">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -493,22 +530,53 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592" />
 =======
         <state line="74" column="84" selection-start="3369" selection-end="3369" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="1635">
+=======
+    <entry file="file://$PROJECT_DIR$/views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="6" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="2027" selection-end="2027" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3757" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/css/wall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="0" selection-start="1151" selection-end="1151" vertical-scroll-proportion="-11.2" vertical-offset="1046" max-vertical-offset="6171">
+>>>>>>> Stashed changes
           <folding />
         </state>
 >>>>>>> origin/rillvar
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
         <state line="30" column="47" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.44386873" vertical-offset="253" max-vertical-offset="1105" />
 =======
         <state line="25" column="35" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="915">
+=======
+    <entry file="file://$PROJECT_DIR$/controllers/wallcontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="166" selection-start="862" selection-end="862" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="833">
+>>>>>>> Stashed changes
           <folding />
         </state>
 >>>>>>> origin/rillvar
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/views/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="841" column="21" selection-start="13416" selection-end="13416" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13095">
@@ -550,13 +618,27 @@
           </folding>
         </state>
 >>>>>>> origin/rillvar
+=======
+    <entry file="file://$PROJECT_DIR$/../Brobook/js/brobook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="47" selection-start="1360" selection-end="1360" vertical-scroll-proportion="0.44386873" vertical-offset="253" max-vertical-offset="1105" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Brobook/controllers/messagecontroller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="29" selection-start="4579" selection-end="4583" vertical-scroll-proportion="0.6148282" vertical-offset="1377" max-vertical-offset="2006" />
+>>>>>>> Stashed changes
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/css/profile.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state line="98" column="30" selection-start="1449" selection-end="1450" vertical-scroll-proportion="0.0" vertical-offset="1470" max-vertical-offset="8670">
           <folding />
         </state>
+=======
+        <state line="69" column="72" selection-start="3217" selection-end="3217" vertical-scroll-proportion="0.26401445" vertical-offset="1027" max-vertical-offset="2057" />
+>>>>>>> Stashed changes
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/css/main.css">
@@ -603,16 +685,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/css/wall.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state line="20" column="0" selection-start="305" selection-end="305" vertical-scroll-proportion="0.5743243" vertical-offset="0" max-vertical-offset="6375" />
 =======
         <state line="8" column="18" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
           <folding />
         </state>
 >>>>>>> origin/rillvar
+=======
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610" />
+>>>>>>> Stashed changes
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/profile.php">
+    <entry file="file://$PROJECT_DIR$/views/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
         <state line="5" column="122" selection-start="353" selection-end="353" vertical-scroll-proportion="0.15370706" vertical-offset="0" max-vertical-offset="2448" />
@@ -628,12 +715,16 @@
     <entry file="file://$PROJECT_DIR$/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="6" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
+=======
+        <state line="60" column="0" selection-start="2027" selection-end="2027" vertical-scroll-proportion="1.5544041" vertical-offset="0" max-vertical-offset="1665">
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/js/main.js">
+    <entry file="file://$PROJECT_DIR$/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state line="60" column="0" selection-start="2027" selection-end="2027" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1665">
           <folding />
         </state>
@@ -773,19 +864,27 @@
     <entry file="file://$PROJECT_DIR$/../Brobook/views/Friends.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="84" selection-start="3369" selection-end="3369" vertical-scroll-proportion="-41.0" vertical-offset="126" max-vertical-offset="1635">
+=======
+        <state line="15" column="6" selection-start="672" selection-end="672" vertical-scroll-proportion="0.4054054" vertical-offset="0" max-vertical-offset="555">
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/header.php">
+    <entry file="file://$PROJECT_DIR$/views/profile.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state line="55" column="0" selection-start="3368" selection-end="3368" vertical-scroll-proportion="-34.375" vertical-offset="0" max-vertical-offset="915">
+=======
+        <state line="5" column="122" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2160">
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/wall.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state line="14" column="22" selection-start="674" selection-end="674" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="1470">
           <folding />
         </state>
@@ -893,6 +992,9 @@
     <entry file="file://$PROJECT_DIR$/views/profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="55" selection-start="2718" selection-end="2718" vertical-scroll-proportion="1.2429378" vertical-offset="15" max-vertical-offset="1695">
+=======
+        <state line="8" column="18" selection-start="542" selection-end="542" vertical-scroll-proportion="0.21621622" vertical-offset="0" max-vertical-offset="1335">
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
