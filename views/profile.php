@@ -1,16 +1,23 @@
 
             <?php include "header.php"?>
             <div id="wallContent">
+                <?php
+                    if($user->profile_img == null){
+                        $picture = "../../myspace/views/img/anonym.png";
+                    }
+                    else{
+                        $picture = $user->profile_img;
+                }?>
                 <div class="profileContent">
                     <div class="profileInfo">
-                        <img class="profilePic" src="http://40.media.tumblr.com/69fd5bd214dfd9ae52a3196fbf9f46a9/tumblr_njmfshP8ln1tk1dwxo2_1280.jpg" />
+                        <img class="profilePic" src="<?php echo($picture)?>" />
                         <div class="profileFollow">
-                            <p class="profileName">Mårten Claesson</p>
+                            <p class="profileName"><?php echo($user->first_name . " " . $user->last_name)?></p>
                             <div class="follows">
                                 <div class="followsNrDiv">
                                     <p class="followsNr">119</p>
                                 </div>
-                                <a href="../../myspace/user/followers" class="noStyleLinks"><p class="followsText">Follows</p></a>
+                                <a href="../../myspace/user/followers" class="noStyleLinks"><p class="followsText">Follow</p></a>
                             </div>
                             <div class="follows">
                                 <div class="followsNrDiv">
@@ -24,25 +31,29 @@
                             <input type="submit" name="follow_button" id="followButton" value="FOLLOW"/>
                             <input type="submit" name="" id="unfollowButton" value="UNFOLLOW"/>
                             <div class="about">
-                                <p class="aboutText">Hej jag heter Mårten Claesson och jag är mest känd som en främling. Jag har ofta hängslen på mig men ibland vill man ju bara "Go Nuts" så att säga och ha på sig vanliga braxor. Jag jamar ofta på fritiden</p>
+                                <p class="aboutText"><?php echo($user->about)?></p>
                             </div>
                         </div>
                     </div>
-                    </div>
+                </div>
                 <div class="post">
-                    <div class="postContent">
-                        <textarea class="writePost" name="" placeholder="Write your status here..."></textarea>
-                        <input class="postPhoto" name="" placeholder="Choose your photo..." type="text"/>
-                        <input class="postSound" name="" placeholder="Choose your sound..." type="text"/>
-                    </div>
-                    <div class="hiddenPostContent">
-                        <div class="postBorder">
-                            <p class="postBorderText" id="showSound">SOUND</p>
-                            <p class="postBorderText" id="showPhoto">PHOTO</p>
-                            <p class="postBorderText" id="showText">TEXT</p>
+                    <form method="post" action="../user/addStatus">
+                        <div class="postContent">
+                            <textarea class="writePost" name="text" placeholder="Write your status here..."></textarea>
+                            <input class="postPhoto" name="photo" placeholder="Choose your photo..." type="text"/>
+                            <input class="postSound" name="sound" placeholder="Choose your sound..." type="text"/>
                         </div>
-                        <button class="postButton" name="">POST</button>
-                    </div>
+                        <div class="hiddenPostContent">
+                            <div class="postBorder">
+                                <p class="postBorderText" id="showSound">SOUND</p>
+                                <p class="postBorderText" id="showPhoto">PHOTO</p>
+                                <p class="postBorderText" id="showText">TEXT</p>
+                            </div>
+                            <input type="submit" class="postButton" name="post_text_button" value="POST"/>
+                            <input type="submit" class="photoButton" name="post_photo_button" value="POST"/>
+                            <input type="submit" class="soundButton" name="post_sound_button" value="POST"/>
+                        </div>
+                    </form>
                 </div>
                 <div class="statusContent">
                     <div class="statusUser">

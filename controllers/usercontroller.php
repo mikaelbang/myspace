@@ -28,6 +28,21 @@ class Usercontroller{
         require_once "views/other_user.php";
     }
 
+    public function addStatusAction(){
+
+        $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
+
+        if(isset($_POST["post_text_button"]) && !empty($_POST["text"])){
+            $addTextStm = $db->prepare("INSERT INTO posts(text, user_id) VALUES (:text, :user_id)");
+            $addTextStm->bindParam(":text", $_POST["text"]);
+            $addTextStm->bindParam(":user_id", $_SESSION["user"]->user_id);
+            $addTextStm->execute();
+
+        }
+
+        header("location:../../myspace/user/show");
+    }
+
     public function followersAction(){
 
         $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
@@ -101,7 +116,6 @@ class Usercontroller{
             $unFollowStm->execute();
         }
         header("location:../user/followers");
-
     }
 
     public function acceptAction(){
