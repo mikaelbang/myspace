@@ -13,6 +13,23 @@ class Usercontroller{
         $profileStm->execute();
         $user = $profileStm->fetchObject();
 
+        $followStm = $db->prepare('SELECT * FROM followers AS F JOIN users AS U ON (U.user_id = F.follower OR U.user_id = F.followee) WHERE U.user_id = :currentUser');
+        $followStm->bindParam(':currentUser', $_SESSION["user"]->user_id);
+        $followStm->execute();
+        $allFollow = $followStm->fetchAll();
+
+        $follow = 0;
+        $followers = 0;
+
+        foreach($allFollow as $i){
+            if($i["followee"] == $_SESSION["user"]->user_id){
+                $followers += 1;
+            }
+            if($i["follower"] == $_SESSION["user"]->user_id){
+                $follow += 1;
+            }
+        }
+
         require_once "views/profile.php";
     }
 

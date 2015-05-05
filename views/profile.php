@@ -15,13 +15,13 @@
                             <p class="profileName"><?php echo($user->first_name . " " . $user->last_name)?></p>
                             <div class="follows">
                                 <div class="followsNrDiv">
-                                    <p class="followsNr">119</p>
+                                    <p class="followsNr"><?php echo($follow)?></p>
                                 </div>
                                 <a href="../../myspace/user/followers" class="noStyleLinks"><p class="followsText">Follow</p></a>
                             </div>
                             <div class="follows">
                                 <div class="followsNrDiv">
-                                    <p class="followsNr">24</p>
+                                    <p class="followsNr"><?php echo($followers)?></p>
                                 </div>
                                 <a href="../../myspace/user/followers" class="noStyleLinks"><p class="followsText">Followers</p></a>
                             </div>
