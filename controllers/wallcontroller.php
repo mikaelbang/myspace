@@ -15,11 +15,14 @@ class Wallcontroller{
         $commentStm->bindParam(":currUser", $_SESSION['user']->user_id, PDO::PARAM_STR);
         $commentStm->execute();
 
-        $resultPost = $postStm->fetchAll();
-        $resultComments = $commentStm->fetchAll();
+        //get all posts
+        //TODO: Sort the posts using ORDER BY DESC or ASC
+        $posts = $postStm->fetchAll();
 
-        $posts = $this->sortPosts($resultPost);
-        $comments = $this->sortComments($resultComments);
+        //loop through the posts
+        //make a sql statement to get the comments for that post ONLY!
+
+        $comments = $commentStm->fetchAll();
 
         // if $comments["post_id"] == $posts['post_id'] then print comment.
 
@@ -51,34 +54,5 @@ class Wallcontroller{
         $insertCommentStm->execute();
 
         echo($_POST['content'] ." " . $_POST['hidden_post_id'] ." ". $_SESSION['user']->user_id);
-    }
-
-    private function sortPosts($resultPost){
-
-        $posts = array();
-
-        for($i = 0; $i < count($resultPost); $i++){
-            $currentPostId = $resultPost[$i]["post_id"];
-            if($i == 0){
-                array_push($posts, $resultPost[$i]);
-            }
-            elseif($resultPost[$i-1]["post_id"] != $currentPostId){
-                array_push($posts, $resultPost[$i]);
-            }
-        }
-
-        return $posts;
-    }
-
-    private function sortComments($resultComments){
-
-        $comments = array();
-        for($j = 0; $j < count($resultComments); $j++){
-            if($resultComments[$j]['comment_id'] != null){
-                array_push($comments, $resultComments[$j]);
-            }
-        }
-
-        return $comments;
     }
 }

@@ -56,19 +56,21 @@
                     </form>
                 </div>
                 <div class="statusContent">
-                    <div class="statusUser">
-                        <img src="http://40.media.tumblr.com/69fd5bd214dfd9ae52a3196fbf9f46a9/tumblr_njmfshP8ln1tk1dwxo2_1280.jpg" class="statusUserImg">
-                        <input class="statusUserText" value="Mattias Willhelmsson" type="submit" name=""/>
-                    </div>
-                    <div class="statuses">
-                        <div class="statusBorder">
-                            <p class="statusBorderText">Mattias posted a sound | | 2015-03-24 | 15:52</p>
+                    <div class="aStatus">
+                        <div class="statusUser">
+                            <img src="http://40.media.tumblr.com/69fd5bd214dfd9ae52a3196fbf9f46a9/tumblr_njmfshP8ln1tk1dwxo2_1280.jpg" class="statusUserImg">
+                            <input class="statusUserText" value="Mattias Willhelmsson" type="submit" name=""/>
                         </div>
-                        <div class="statusPosts">
-                            <p class="statusPostsText">//michaelshuntByRichardAndTheButter..//</p>
-                        </div>
-                        <div class="statusPosts">
-                            <img class="statusPostsPhoto" src=""/>
+                        <div class="statuses">
+                            <div class="statusBorder">
+                                <p class="statusBorderText">Mattias posted a sound | | 2015-03-24 | 15:52</p>
+                            </div>
+                            <div class="statusPosts">
+                                <p class="statusPostsText">//michaelshuntByRichardAndTheButter..//</p>
+                            </div>
+                            <div class="statusPosts">
+                                <img class="statusPostsPhoto" src=""/>
+                            </div>
                         </div>
                     </div>
                     <div class="statusUnderBorder">

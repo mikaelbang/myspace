@@ -23,22 +23,23 @@
                     $picture = $posts[$post]["profile_img"];
                 }
                 ?>
-                <div class="statusUser">
-                    <img src="<?php echo($picture)?>" class="statusUserImg">
-                    <input class="statusUserText" value="<?php echo($posts[$post]["first_name"] . " " . $posts[$post]["last_name"])?>" type="submit" name=""/>
+                <div class="aStatus">
+                    <div class="statusUser">
+                        <img src="<?php echo($picture)?>" class="statusUserImg">
+                        <input class="statusUserText" value="<?php echo($posts[$post]["first_name"] . " " . $posts[$post]["last_name"])?>" type="submit" name=""/>
+                    </div>
+                    <div class="statuses">
+                        <div class="statusBorder">
+                            <p class="statusBorderText"><?php echo($posts[$post]['created'])?></p>
+                        </div>
+                        <div class="statusPosts">
+                            <p class="statusPostsText"><?php echo($posts[$post]['text'])?></p>
+                        </div>
+                        <div class="statusPosts">
+                            <img class="statusPostsPhoto" src=""/>
+                        </div>
+                    </div>
                 </div>
-                <div class="statuses">
-                    <div class="statusBorder">
-                        <p class="statusBorderText"><?php echo($posts[$post]['created'])?></p>
-                    </div>
-                    <div class="statusPosts">
-                        <p class="statusPostsText"><?php echo($posts[$post]['text'])?></p>
-                    </div>
-                    <div class="statusPosts">
-                        <img class="statusPostsPhoto" src=""/>
-                    </div>
-                </div>
-
                 <?php
                 $comment_count = 0;
                 for($k = 0; $k < count($comments); $k++){

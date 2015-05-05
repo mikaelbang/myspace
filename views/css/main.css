@@ -245,8 +245,8 @@
     width: 800px;
     margin: 0 auto;
     opacity: 1;
-    background-color: white;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .statusUser{
@@ -275,6 +275,11 @@
     width: 150px;
     cursor: pointer;
     outline: none;
+}
+
+.aStatus{
+    background-color: white;
+    margin-top: 30px;
 }
 
 .statuses{
@@ -402,7 +407,7 @@
 .commentContent{
     width:800px;
     text-align: center;
-    background-color: #1c8591;
+    background-color: rgba(0,0,0,0.6);
     margin: 0 auto;
     display: none;
 }
@@ -448,6 +453,8 @@
     background-color: white;
     width: 600px;
     margin: 0 auto;
+    padding-top: 20px;
+    background-color: #1c8591;
 }
 
 .yourCommentText{
