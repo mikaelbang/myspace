@@ -1,0 +1,922 @@
+#body{
+    background: url("../img/musicbckr.png");
+    color: white;
+    font-family: 'Lato 400 classic', sans-serif;
+    background-attachment: fixed;
+}
+
+#wallpaper{
+    margin: 0 auto;
+}
+
+#header{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.logoPic{
+    width: 400px;
+}
+
+#menu{
+    height: 40px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+#menuBorder{
+    padding-left: 40px;
+    width: 860px;
+    background-color: #86c3ca;
+}
+
+.menuItems{
+    vertical-align: top;
+    height: 27px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 13px;
+}
+
+.menuItemsSearch{
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 11px;
+}
+
+.menuItemText{
+    letter-spacing: 1.3pt;
+}
+
+.search{
+    width: 300px;
+}
+
+#rightMenuItem{
+    vertical-align: top;
+    height: 25px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    font-size: 12px;
+    float: right;
+}
+
+#rightMenuItem:hover{
+    background-color: #1c8591;
+    cursor: pointer;
+}
+
+.menuItems:hover{
+    background-color: #1c8591;
+    cursor: pointer;
+}
+
+.noStyleLinks{
+    text-decoration: none;
+    color: white;
+}
+
+#wallContent{
+    width: 900px;
+    background-color: rgba(0,0,0,0.6);
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#hiddenMenu{
+    display: none;
+    background-color: #1c8591;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    width: 100px;
+    position: absolute;
+    margin-left: 758px;
+}
+
+.hiddenMenuText{
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    border-bottom: 1px solid white;
+}
+
+.hiddenMenuText:hover{
+    color: #86c3ca;
+}
+
+#page-cover {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+#editContent{
+    width: 100%;
+    position: fixed;
+    padding-top: 60px;
+    display: none;
+    z-index: 1000;
+
+}
+
+#edit{
+    width: 560px;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    box-shadow:  3px 5px 8px 4px rgba(0,0,0,0.5);
+}
+
+.editHeadline{
+    color: #1c8591;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.editInputs{
+    height: 40px;
+    width: 500px;
+    border-radius: 3px;
+    border: 1px solid #86c3ca;
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding-left: 15px;
+    outline: none;
+}
+
+.editAbout{
+    height: 40px;
+    width: 500px;
+    border-radius: 3px;
+    border: 1px solid #86c3ca;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.editButtons{
+}
+
+#cancelButton{
+    width: 240px;
+    height: 40px;
+    color: white;
+    background-color: #cc4148;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+#cancelButton:active{
+    background-color: darkred;
+}
+
+#saveButton{
+    width: 240px;
+    height: 40px;
+    color: white;
+    background-color: #1c8591;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#saveButton:active{
+    background-color: #155f67;
+}
+
+
+#underBorder{
+    margin:  0 auto;
+    height: 40px;
+    width: 800px;
+    border-bottom: 1px solid white;
+    text-align: center;
+    margin-top: -25px;
+
+}
+
+.underBorderItem{
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+.underBorderText{
+    letter-spacing: 1.5pt;
+    color: white;
+    background-color: rgba(0,0,0,0.0);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    width: 100px;
+    outline: none;
+}
+
+.underBorderText:hover{
+    color: lightgray;
+}
+
+.statusContent{
+    width: 800px;
+    margin: 0 auto;
+    opacity: 1;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.statusUser{
+    width: 120px;
+    background-color: white;
+    display: inline-block;
+    border: none;
+}
+
+.statusUserImg{
+    border: 2px solid #86c3ca;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.statusUserText{
+    font-size: 12px;
+    padding-bottom: 10px;
+    color: #1c8591;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    width: 150px;
+    cursor: pointer;
+    outline: none;
+}
+
+.statuses{
+    display: inline-block;
+    vertical-align: top;
+    width: 600px;
+}
+
+.statusBorder{
+    width: 600px;
+    height: 20px;
+    border-bottom: 1px solid #86c3ca;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.statusBorderText{
+    font-size: 10px;
+    font-family: "georgia", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    color: grey;
+    font-style: italic;
+}
+
+.statusPosts{
+    padding-top: 10px;
+    padding-left: 40px;
+    width: 600px;
+    text-align: center;
+
+}
+
+.statusPostsText{
+    color: black;
+    font-size: 17px;
+    word-wrap: break-word;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.statusPostsPhoto{
+    max-width: 600px;
+    max-height: 800px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.statusUnderBorder{
+    width: 800px;
+    height: 30px;
+    background-color: #86c3ca;
+}
+
+.showLikes{
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+.showLikesText{
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+}
+
+.commentPic{
+    height: 11px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.showComments{
+    display: inline-block;
+    width: 20px;
+    text-align: right;
+    margin-left: 10px;
+}
+
+.statusButtons{
+    display: inline-block;
+    float: right;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.likeButton{
+    display: inline-block;
+    color: white;
+    background-color: #86c3ca;
+    border: none;
+    width: 60px;
+    text-align: center;
+    height: 20px;
+    font-size: 13px;
+    letter-spacing: 1.2pt;
+    cursor: pointer;
+    outline: none;
+}
+
+.likeButton:hover{
+    color: #1c8591;
+}
+
+.commentButton{
+    display: inline-block;
+    color: white;
+    background-color: #86c3ca;
+    border: none;
+    width: 90px;
+    height: 20px;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1.2pt;
+    cursor: pointer;
+    outline: none;
+}
+
+.commentButton:hover{
+    color: #1c8591;
+}
+
+.commentContent{
+    width:800px;
+    text-align: center;
+    background-color: #1c8591;
+    margin: 0 auto;
+    display: none;
+}
+
+.othersComments{
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 15px;
+
+}
+
+.othersCommentsBorder{
+    height: 20px;
+    background-color: white;
+    border-bottom: 1px solid #86c3ca;
+    margin: 0 auto;
+}
+
+.commentBorderText{
+    font-size: 11px;
+    font-family: "georgia", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1c8591;
+    font-style: italic;
+    padding-top: 5px;
+}
+
+.othersCommentContent{
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.othersCommentText{
+    color: black;
+    padding: 15px;
+    font-size: 13px;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.yourComment{
+    background-color: white;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.yourCommentText{
+    color: grey;
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    width: 600px;
+}
+
+.yourCommentButton{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 150px;
+    color: white;
+    background-color: #cc4148;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.yourCommentButton:active{
+    background-color: darkred;
+}
+
+#active{
+    background-color: #1c8591;
+}
+
+.profileContent{
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+
+
+}
+
+.profilePic{
+    width: 200px;
+    display: inline-block;
+    border: 2px solid #86c3ca;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+
+.profileFollow{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 40px;
+    width: 500px;
+}
+
+.profileName{
+    font-size: 24px;
+    letter-spacing: 1.6pt;
+    color: #1c8591;
+    padding-top: 10px;
+}
+
+.follows{
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.followRequest{
+    display: none;
+    vertical-align: top;
+}
+
+.followRequestText{
+    color: #cc4148;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#followButton{
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    background-color: #1c8591;
+    width: 150px;
+    border: 0;
+    border-radius: 5px;
+    height: 22px;
+    margin-top: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+
+#followButton:active{
+    background-color: #155f67;
+}
+
+#unfollowButton{
+    display: none;
+    vertical-align: top;
+    color: white;
+    background-color: #cc4148;
+    width: 150px;
+    border: 0;
+    border-radius: 5px;
+    height: 22px;
+    margin-top: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+#unfollowButton:active{
+    background-color: darkred;
+}
+
+
+
+.followsNrDiv{
+    margin-top: 5px;
+    background-color: #86c3ca;
+    width: 80px;
+}
+
+.followsNr{
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+
+.followsText{
+    padding-top: 5px;
+    font-size: 12px;
+    color: black;
+}
+
+.about{
+    border-bottom: 1px solid #1c8591;
+    border-top: 1px solid #1c8591;
+    margin-top: 15px;
+    height: 118px;
+    margin-bottom: 15px;
+}
+
+.aboutText{
+    padding-top: 15px;
+    letter-spacing: 1.01pt;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.2;
+    color: dimgray;
+}
+
+.post{
+    text-align: center;
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.postContent{
+    width: 600px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.writePost{
+    width: 600px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    padding-top: 10px;
+}
+
+.postPhoto{
+    width: 600px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    display: none;
+}
+
+.postSound{
+    width: 600px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    display: none;
+}
+
+.hiddenPostContent{
+    display: none;
+    background-color: white;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.postBorder{
+    border-top: 1px solid #86c3ca;
+    border-bottom: 1px solid #86c3ca;
+    width: 540px;
+    margin: 0 auto;
+}
+
+.postBorderText{
+    color: #1c8591;
+    display: inline-block;
+    padding: 6px;
+    font-size: 12px;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.postBorderText:hover{
+    color: #86c3ca;
+}
+
+.postButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    background-color: #cc4148;
+    width: 150px;
+    border: 0;
+    border-radius: 5px;
+    height: 22px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.photoButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+    vertical-align: top;
+    color: white;
+    background-color: #cc4148;
+    width: 150px;
+    border: 0;
+    border-radius: 5px;
+    height: 22px;
+    cursor: pointer;
+    outline: none;
+}
+
+.soundButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+    vertical-align: top;
+    color: white;
+    background-color: #cc4148;
+    width: 150px;
+    border: 0;
+    border-radius: 5px;
+    height: 22px;
+    cursor: pointer;
+    outline: none;
+}
+
+.postButton:active{
+    background-color: darkred;
+}
+
+.soundButton:active{
+    background-color: darkred;
+}
+
+.photoButton:active{
+    background-color: darkred;
+}
+
+.likeButton{
+    display: inline-block;
+    color: white;
+    background-color: #86c3ca;
+    border: 0;
+    width: 60px;
+    text-align: center;
+    height: 20px;
+    font-size: 13px;
+    letter-spacing: 1.2pt;
+    cursor: pointer;
+    outline: none;
+}
+
+.likeButton:hover{
+    color: #1c8591;
+}
+
+#request{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+}
+
+.requestBorder{
+    width: 580px;
+    border-bottom: 1px solid #86c3ca;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.requestBorderText{
+    color: #1c8591;
+    padding-top: 10px;
+}
+
+.requestUser{
+    text-align: left;
+    margin: 15px;
+    width: 150px;
+    border: 1px solid #86c3ca;
+    display: inline-block;
+}
+
+.requestUserName{
+    color: black;
+    padding-bottom: 5px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.requestUserPic{
+    text-align: center;
+    margin-left: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+}
+
+.requestButtons{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 12px;
+}
+
+.accept{
+    border: none;
+    background-color: #1c8591;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.accept:active{
+    background-color: #155f67;
+}
+
+.decline{
+    border: none;
+    background-color: #cc4148;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.decline:active{
+    background-color: darkred;
+}
+
+.follower{
+    width: 290px;
+    background-color: white;
+    margin-top: 30px;
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: top;
+}
+
+#pushFollower{
+    margin-left: 150px;
+}
+
+.followerBorder{
+    width: 290px;
+    height: 30px;
+    background-color: #86c3ca;
+}
+
+.followerBorderText{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.followerUser{
+    width: 290px;
+    height: 50px;
+    border-bottom: 1px solid #86c3ca;
+}
+
+.followerUserPic{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+.followerUserText{
+    padding-top: 16px;
+    display: inline-block;
+    color: #1c8591;
+    vertical-align: top;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    width: 140px;
+    text-align: left;
+}
+
+.miniUnfollow{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 16px;
+    background-color: #cc4148;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    border-radius: 3px;
+}
+
+.miniFollowButton{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 16px;
+    background-color: #1c8591;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    border-radius: 3px;
+}
+
+.miniUnfollow:active{
+    background-color: darkred;
+}
+
+.miniFollowButton:active{
+    background-color: #155f67;
+}
+
+
+
+
+
+
+
+
+
+
+

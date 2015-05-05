@@ -1,0 +1,124 @@
+body{
+    background: url("../img/musicbckr.png");
+    font-family: 'Lato 400 classic', sans-serif;
+    color: white;
+
+}
+
+#header{
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+
+.logoPic{
+    width: 400px;
+}
+
+#content{
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.loginHeadline{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.hideRegister{
+    display: none;
+}
+
+.registerHeadline{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+.showLogin{
+    color: #86c3ca;
+}
+
+.showRegister{
+    color: #86c3ca;
+}
+
+#register{
+    width: 500px;
+    margin: 0 auto;
+    display: none;
+}
+
+
+#login{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.loginInput{
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.loginButton{
+    color: white;
+    background-color: #86c3ca;
+    width: 400px;
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.loginButton:active{
+    background-color: #1c8591;
+}
+
+.inputs{
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.gender{
+    background-color: white;
+    color: #1c8591;
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.genderOption{
+    /*background-color: #1c8591;*/
+    color: #1c8591;
+}
+
+.registerButton{
+    color: white;
+    background-color: #86c3ca;
+    width: 400px;
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.registerButton:active{
+    background-color: #1c8591;
+}
