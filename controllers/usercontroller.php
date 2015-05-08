@@ -33,6 +33,11 @@ class Usercontroller{
         $follow = ($this->viewFollowers($_SESSION["user"]->user_id)[0]);
         $followers = ($this->viewFollowers($_SESSION["user"]->user_id)[1]);
 
+        $allUsersStm = $db->prepare('SELECT first_name, last_name, profile_img FROM users');
+        $allUsersStm->execute();
+
+        $allUsers = $allUsersStm->fetchAll();
+
         //die(var_dump($follow));
 
        // SELECT * FROM users JOIN followers ON (f.followee = currentUser and f.follower = otherUser)
@@ -76,6 +81,13 @@ class Usercontroller{
         $OtherProfileStm->execute();
 
         $user = $OtherProfileStm->fetchObject();
+
+        $otherProfilePostStm = $db->prepare('SELECT * FROM posts WHERE user_id = :userId ORDER BY post_id DESC');
+        $otherProfilePostStm->bindParam(":userId", $_POST['hidden_user_id'], PDO::PARAM_STR);
+        $otherProfilePostStm->execute();
+
+        $posts = $otherProfilePostStm->fetchAll();
+
 
 
         $follow = ($this->viewFollowers($_POST["hidden_user_id"])[0]);
@@ -236,12 +248,6 @@ class Usercontroller{
 
         $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
         $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
-        $allUsersStm = $db->prepare('SELECT first_name, last_name, profile_img FROM users');
-        $allUsersStm->execute();
-
-        $allUsers = $allUsersStm->fetchAll();
-
 
         require_once "views/header.php";
 

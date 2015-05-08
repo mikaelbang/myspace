@@ -5,6 +5,10 @@
     background-attachment: fixed;
 }
 
+input{
+    outline: none;
+}
+
 #wallpaper{
     margin: 0 auto;
 }

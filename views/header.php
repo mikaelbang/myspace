@@ -42,7 +42,7 @@
                         <p class="menuItemText">Profile</p>
                     </div></a>
                     <div class="menuItemsSearch">
-                        <input type="search" placeholder="Search" class="search openDiv" />
+                        <input type="search" placeholder="Search" class="search" />
                     </div>
                     <div id="rightMenuItem">
                         <a href="#" class="noStyleLinks"><p class="menuItemText"><?php echo($_SESSION['user']->first_name ." " . $_SESSION['user']->last_name)?></p></a>
@@ -60,7 +60,8 @@
                             }
                             else{
                                 $picture = $allUsers[$i]["profile_img"];
-                    }?>
+                            }
+                    ?>
                     <div class="searchRow">
                         <img class="searchRowPic" src="<?php echo($picture)?>">
                         <p class="searchRowName"><?php echo($allUsers[$i]["first_name"] . " " . $allUsers[$i]["last_name"])?></p>
@@ -68,18 +69,6 @@
                     <?php
                          }
                     ?>
-                    <div class="searchRow">
-                        <img class="searchRowPic" src="../../myspace/views/img/anonym.png">
-                        <p class="searchRowName">Mikael Bertilsson</p>
-                    </div>
-                    <div class="searchRow">
-                        <img class="searchRowPic" src="../../myspace/views/img/anonym.png">
-                        <p class="searchRowName">Mikael Bertilsson</p>
-                    </div>
-                    <div class="searchRow">
-                        <img class="searchRowPic" src="../../myspace/views/img/anonym.png">
-                        <p class="searchRowName">Mikael Bertilsson</p>
-                    </div>
                 </div>
             </div>
 
