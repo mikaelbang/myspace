@@ -14,10 +14,21 @@ class Usercontroller{
         $user = $profileStm->fetchObject();
 
         $profilePostStm = $db->prepare('SELECT * FROM posts WHERE user_id = :currentUser ORDER BY post_id DESC');
-        $profilePostStm->bindParam(":currentUser", $_SESSION['user']->user_id, PDO::PARAM_STR);
+        $profilePostStm->bindParam(":currentUser", $_SESSION['user']->user_id, PDO::PARAM_INT);
         $profilePostStm->execute();
 
         $posts = $profilePostStm->fetchAll();
+        $comments = array();
+
+        foreach($posts as $post){
+            $commentStm = $db->prepare('SELECT * FROM comments JOIN users AS U ON (U.user_id = comments.user_id) WHERE post_id = :post_id ORDER BY comment_id');
+            $commentStm->bindParam(':post_id', $post["post_id"]);
+            $commentStm->execute();
+            while($comment = $commentStm->fetch()){
+                array_push($comments, $comment);
+            }
+        }
+
 
         $follow = ($this->viewFollowers($_SESSION["user"]->user_id)[0]);
         $followers = ($this->viewFollowers($_SESSION["user"]->user_id)[1]);

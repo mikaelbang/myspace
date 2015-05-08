@@ -71,65 +71,6 @@ $(document).ready(function(){
     });
 
 
-        /*
-            $(this).find('.comment_form').on('click', function(){
-
-                event.preventDefault();
-
-                var comment = {
-                    post_id: $(this).find('.hidden_post_id').val()
-                };
-
-                $.ajax({
-                    type: 'POST',
-                    url: '../wall/getComments',
-                    dataType: 'json',
-                    data: comment,
-                    success: function(comments){
-
-                        for(var i = 0; i < comments.length; i++){
-                            var c = comments[i];
-                            var p_id = c.post_id;
-
-                            $('#others_comments'+ c.post_id +'').prepend('<div class="othersCommentsBorder">' +
-                                                            '<p class="commentBorderText">' + c.first_name + " " + c.last_name + " || " + c.created + '</p>' +
-                                                        '</div>' +
-                                                        '<div class="othersCommentContent">' +
-                                                            '<p class="othersCommentText">' + c.content + '</p>' +
-                                                        '</div>');
-                        }
-                    },
-                    error: function(){
-                        alert('Something went wrong');
-                    }
-                });
-
-                $(this).parent().parent().siblings().closest('.commentContent').animate({height: 'toggle'});
-                $(this).parent().parent().siblings('.commentContent').find('.othersComments').empty();
-
-
-            });*/
-
-    $(this).find('.addCommentForm').on('submit', function(){
-        event.preventDefault();
-        alert($(this).serialize());
-
-        var data = $(this).serialize();
-
-        $.ajax({
-            type: 'POST',
-            url: '../wall/comment',
-            //dataType: 'json',
-            data: data,
-            success: function(comment){
-                alert(comment);
-            },
-            error: function(){
-                alert('Something went wrong');
-            }
-        });
-    });
-
     $(".postContent").click(function(){
         $(".hiddenPostContent").slideDown();
     });
@@ -164,36 +105,86 @@ $(document).ready(function(){
 
     });
 
+    $('.yourCommentButton').on('click', function(){
 
-    function ajax(comment){
-
-        $.ajax({
-            type: 'POST',
-            url: '../wall/getComments',
-            dataType: 'json',
-            data: comment,
-            success: function(comments){
-
-                for(var i = 0; i < comments.length; i++){
-                    var c = comments[i];
-                    var p_id = c.post_id;
-
-                    $('#others_comments'+ c.post_id +'').prepend('<div class="othersCommentsBorder">' +
-                        '<p class="commentBorderText">' + c.first_name + " " + c.last_name + " || " + c.created + '</p>' +
-                        '</div>' +
-                        '<div class="othersCommentContent">' +
-                        '<p class="othersCommentText">' + c.content + '</p>' +
-                        '</div>');
-                }
-            },
-            error: function(){
-                alert('Something went wrong');
-            }
-        });
-    }
+        var postId = $(this).siblings('.hidden_post_id').val();
+        var comment = $(this).siblings('.yourComment').find('.yourCommentText').val();
+        var userId = $(this).siblings('.hidden_current_user').val();
+        var userName = $(this).siblings('.hidden_user_name').val();
+        var userPic = $(this).siblings('.hidden_profile_pic').val();
+        var this_element = $(this).siblings('.yourComment'); // Sends info of where the comment should be added so we can prepend it.
+        var created = GetTodayDate();
 
 
+        comment_insert(postId, comment, userId, this_element, userName, userPic, created);
+
+        $(this).siblings('.yourComment').find('.yourCommentText').val('');
+
+        //console.log($(this).parent().parent().next('.statusUnderBorder'));
+
+        //alert($(this).parent().siblings().closest('.statusUnderBorder').find('.showComments')[0].innerText);
+
+
+    })
 });
 
 
+function comment_insert(postId, comment, userId, this_element, userName, userPic, created){
 
+
+    $.post("../controllers/comment.php" ,
+        {
+            hidden_post_id: postId,
+            content: comment,
+            hidden_current_user: userId
+        }
+    )
+        .error(
+            function(){
+                console.log("Error: ");
+            })
+        .success(
+            function(data){
+
+                addCommentToHTML(postId, comment, userId, this_element, userName, userPic, created);
+            }
+        );
+}
+
+function addCommentToHTML(postId, comment, userId, this_element, userName, userPic, created){
+
+    var t = '';
+    t += '<div class="othersComments">';
+    t +=    '<div class="othersCommentsBorder">';
+    t +=        '<p class="commentBorderText">' + userName + " || " + created + '</p>';
+    t +=    '</div>';
+    t +=    '<div class="othersCommentContent">';
+    t +=        '<img class="othersCommentPic" src="' + userPic + '"/>';
+    t +=        '<p class="othersCommentText">' + comment + '</p>';
+    t +=    '</div>';
+    t += '</div>';
+
+    if(comment != ''){
+        this_element.before(t);
+    }
+
+}
+
+
+function GetTodayDate() {
+    var tdate = new Date();
+    var dd = tdate.getDate(); //yields day
+    if(dd < 10){
+        dd = "0" + dd;
+    }
+    var MM = tdate.getMonth(); //yields month
+    if(MM < 10){
+        MM = MM + 1;
+        MM = "0" + MM;
+    }
+    var yyyy = tdate.getFullYear(); //yields year
+    var time = tdate.getHours() + ":" + tdate.getMinutes() + ":" + tdate.getSeconds();
+    var now = yyyy + "-" + MM + "-" + dd + " " + time;
+
+    return now;
+}

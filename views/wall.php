@@ -89,13 +89,14 @@
                         }
                     }
                     ?>
-                    <form class="addCommentForm" method="post" action="../wall/comment">
-                        <div class="yourComment">
-                            <input class="yourCommentText" name="content" type="text" placeholder="Wright your comment here..."/>
-                        </div>
-                        <input class="hidden_post_id" name="hidden_post_id" type="hidden" value="<?php echo($post['post_id'])?>">
-                        <input class="yourCommentButton" type="submit" name="submit_comment" value="COMMENT"/>
-                    </form>
+                    <div class="yourComment">
+                        <input class="yourCommentText" name="content" type="text" placeholder="Wright your comment here..."/>
+                    </div>
+                    <input class="hidden_post_id" name="hidden_post_id" type="hidden" value="<?php echo($posts[$post]['post_id'])?>">
+                    <input class="hidden_current_user" type="hidden" value="<?php echo($_SESSION["user"]->user_id)?>">
+                    <input class="hidden_profile_pic" type="hidden" value="<?php echo($_SESSION["user"]->profile_img)?>">
+                    <input class="hidden_user_name" type="hidden" value="<?php echo($_SESSION["user"]->first_name . " " . $_SESSION["user"]->last_name)?>">
+                    <input class="yourCommentButton" type="submit" name="submit_comment" value="COMMENT"/>
                 </div>
         <?php
         }?>
