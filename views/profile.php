@@ -7,7 +7,8 @@
                     }
                     else{
                         $picture = $user->profile_img;
-                }?>
+                    }
+                ?>
                 <div class="profileContent">
                     <div class="profileInfo">
                         <img class="profilePic" src="<?php echo($picture)?>" />
@@ -56,55 +57,84 @@
                     </form>
                 </div>
                 <div class="statusContent">
-                    <div class="aStatus">
-                        <div class="statusUser">
-                            <img src="http://40.media.tumblr.com/69fd5bd214dfd9ae52a3196fbf9f46a9/tumblr_njmfshP8ln1tk1dwxo2_1280.jpg" class="statusUserImg">
-                            <input class="statusUserText" value="Mattias Willhelmsson" type="submit" name=""/>
-                        </div>
-                        <div class="statuses">
-                            <div class="statusBorder">
-                                <p class="statusBorderText">Mattias posted a sound | | 2015-03-24 | 15:52</p>
+                    <?php
+                    for($post = 0; $post < count($posts); $post++){
+                        if($user->profile_img == null){
+                            $picture = "../../myspace/views/img/anonym.png";
+                        }
+                        else{
+                            $picture = $user->profile_img;
+                        }
+                        ?>
+                        <form method="post" action="../user/other">
+                            <div class="aStatus">
+                                <div class="statusUser">
+                                    <img src="<?php echo($picture)?>" class="statusUserImg">
+                                    <input class="statusUserText" value="<?php echo($user->first_name . " " . $user->last_name)?>" type="submit" name="other_user_button"/>
+                                    <input type="hidden" value="<?php echo($posts[$post]["user_id"])?>" name="hidden_user_id">
+                                </div>
+                                <div class="statuses">
+                                    <div class="statusBorder">
+                                        <p class="statusBorderText"><?php echo($posts[$post]['created'])?></p>
+                                    </div>
+                                    <div class="statusPosts">
+                                        <p class="statusPostsText"><?php echo($posts[$post]['text'])?></p>
+                                    </div>
+                                    <div class="statusPosts">
+                                        <img class="statusPostsPhoto" src=""/>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="statusPosts">
-                                <p class="statusPostsText">//michaelshuntByRichardAndTheButter..//</p>
+                        </form>
+                        <?php
+                        $comment_count = 0;
+                        for($k = 0; $k < count($comments); $k++){
+                            if($comments[$k]["post_id"] == $posts[$post]['post_id']){
+                                $comment_count += 1;
+                            }
+                        }
+                        ?>
+                        <div class="statusUnderBorder">
+                            <div class="showLikes">
+                                <p class="showLikesText">13,900 L</p>
+                                <a href="#" class="noStyleLinks"><p class="showComments"><?php echo($comment_count)?></p><img src="../../myspace/views/img/commentpic.png" class="commentPic"/></a>
                             </div>
-                            <div class="statusPosts">
-                                <img class="statusPostsPhoto" src=""/>
+                            <div class="statusButtons">
+                                <input class="likeButton" type="submit" value="LIKE" name=""/>
+                                <form class="comment_form commentButton" method="post">
+                                    <input class="hidden_post_id" type="hidden" value="<?php echo($posts[$post]['post_id'])?>">
+                                    <input class="commentButton" type="button" value="COMMENT" name="show_comments"/>
+                                </form>
                             </div>
                         </div>
-                    </div>
-                    <div class="statusUnderBorder">
-                        <div class="showLikes">
-                            <p class="showLikesText">13,900 L</p>
-                            <a href="#" class="noStyleLinks"><p class="showComments">45</p><img src="../../myspace/views/img/commentpic.png" class="commentPic"/></a>
+                        <div class="commentContent">
+                            <?php
+                            for($j = 0; $j < count($comments); $j++){
+                                if($comments[$j]["post_id"] == $posts[$post]['post_id']){
+                                    ?>
+                                    <div class="othersComments">
+                                        <div class="othersCommentsBorder">
+                                            <p class="commentBorderText"><?php echo($comments[$j]['first_name'] . " " . $comments[$j]['last_name'])?></p>
+                                        </div>
+                                        <div class="othersCommentContent">
+                                            <p class="othersCommentText"><?php echo($comments[$j]['content'])?></p>
+                                        </div>
+                                    </div>
+                                <?php
+                                }
+                            }
+                            ?>
+                            <form class="addCommentForm" method="post" action="../wall/comment">
+                                <div class="yourComment">
+                                    <input class="yourCommentText" name="content" type="text" placeholder="Wright your comment here..."/>
+                                </div>
+                                <input class="hidden_post_id" name="hidden_post_id" type="hidden" value="<?php echo($post['post_id'])?>">
+                                <input class="yourCommentButton" type="submit" name="submit_comment" value="COMMENT"/>
+                            </form>
                         </div>
-                        <div class="statusButtons">
-                            <button class="likeButton" type="submit"  value="LIKE" name="">LIKE</button>
-                            <input class="commentButton" type="submit" value="COMMENT" name=""/>
-                        </div>
-                    </div>
-                </div>
-                <div class="commentContent">
-                    <div class="othersComments">
-                        <div class="othersCommentsBorder">
-                            <p class="commentBorderText">Karl Gunnarsson | | 2015-03-25 13:26  </p>
-                        </div>
-                        <div class="othersCommentContent">
-                            <p class="othersCommentText">Det här var allt en bra låt. Det enda som är bättre än låten är namnet på bandet.</p>
-                        </div>
-                        <div class="othersCommentsBorder">
-                            <p class="commentBorderText">Karl Gunnarsson | | 2015-03-25 13:26  </p>
-                        </div>
-                        <div class="othersCommentContent">
-                            <p class="othersCommentText">Det här var allt en bra låt. Det enda som är bättre än låten är namnet på bandet. Det enda som är bättre än låten är namnet på bandet. Det enda som är bättre än låten är namnet på bandet. Det enda som är bättre än låten är namnet på bandet. Det enda som är bättre än låten är namnet på bandet. Det enda som är bättre än låten är namnet på bandet.</p>
-                        </div>
-                    </div>
-                    <div class="yourComment">
-                        <p class="yourCommentText">Wright your comment here...</p>
-                    </div>
-                    <input class="yourCommentButton" type="submit" name="" value="COMMENT"/>
+                    <?php
+                    }?>
                 </div>
             </div>
-        </div>
     </body>
 </html>

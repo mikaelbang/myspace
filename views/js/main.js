@@ -40,6 +40,20 @@ $(document).ready(function(){
         $("#editContent").css("display","none")
     });
 
+    $(".search").click(function(){
+        $(".searchContent").show();
+    });
+
+    $('.searchContent').click(function(e) { //button click class name is myDiv
+        e.stopPropagation();
+    })
+
+    $(function(){
+        $(document).click(function(){
+            $('.searchContent').hide(); //hide the button
+
+        });
+    });
 
     $(".editAbout").click(function(){
         $(".editAbout").css("height","100px");
