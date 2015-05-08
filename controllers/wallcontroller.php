@@ -6,7 +6,7 @@ class Wallcontroller{
 
         $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
 
-        $postStm = $db->prepare('SELECT * FROM posts AS P JOIN users AS U ON (P.user_id = U.user_id) JOIN followers AS F ON (F.followee = U.user_id) WHERE F.follower = :currentUser');
+        $postStm = $db->prepare('SELECT * FROM posts AS P JOIN users AS U ON (P.user_id = U.user_id) JOIN followers AS F ON (F.followee = U.user_id) WHERE F.follower = :currentUser ORDER BY P.post_id DESC');
         $postStm->bindParam(":currentUser", $_SESSION['user']->user_id, PDO::PARAM_STR);
         $postStm->execute();
 
@@ -14,7 +14,7 @@ class Wallcontroller{
         $comments = array();
 
         foreach($posts as $post){
-            $commentStm = $db->prepare('SELECT * FROM comments JOIN users AS U ON (U.user_id = comments.user_id) WHERE post_id = :post_id ORDER BY comment_id DESC');
+            $commentStm = $db->prepare('SELECT * FROM comments JOIN users AS U ON (U.user_id = comments.user_id) WHERE post_id = :post_id ORDER BY comment_id');
             $commentStm->bindParam(':post_id', $post["post_id"]);
             $commentStm->execute();
             while($comment = $commentStm->fetch()){
