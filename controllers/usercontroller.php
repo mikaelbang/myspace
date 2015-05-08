@@ -13,8 +13,43 @@ class Usercontroller{
         $profileStm->execute();
         $user = $profileStm->fetchObject();
 
-        $followStm = $db->prepare('SELECT * FROM followers AS F JOIN users AS U ON (U.user_id = F.follower OR U.user_id = F.followee) WHERE U.user_id = :currentUser');
-        $followStm->bindParam(':currentUser', $_SESSION["user"]->user_id);
+        $profilePostStm = $db->prepare('SELECT * FROM posts WHERE user_id = :currentUser ORDER BY post_id DESC');
+        $profilePostStm->bindParam(":currentUser", $_SESSION['user']->user_id, PDO::PARAM_INT);
+        $profilePostStm->execute();
+
+        $posts = $profilePostStm->fetchAll();
+        $comments = array();
+
+        foreach($posts as $post){
+            $commentStm = $db->prepare('SELECT * FROM comments JOIN users AS U ON (U.user_id = comments.user_id) WHERE post_id = :post_id ORDER BY comment_id');
+            $commentStm->bindParam(':post_id', $post["post_id"]);
+            $commentStm->execute();
+            while($comment = $commentStm->fetch()){
+                array_push($comments, $comment);
+            }
+        }
+
+
+        $follow = ($this->viewFollowers($_SESSION["user"]->user_id)[0]);
+        $followers = ($this->viewFollowers($_SESSION["user"]->user_id)[1]);
+
+        //die(var_dump($follow));
+
+       // SELECT * FROM users JOIN followers ON (f.followee = currentUser and f.follower = otherUser)
+
+            //if true then
+
+
+
+        require_once "views/profile.php";
+    }
+
+    private function viewFollowers($user){
+
+        $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
+
+        $followStm = $db->prepare('SELECT * FROM followers AS F JOIN users AS U ON (U.user_id = F.follower OR U.user_id = F.followee) WHERE U.user_id = :userId');
+        $followStm->bindParam(':userId', $user);
         $followStm->execute();
         $allFollow = $followStm->fetchAll();
 
@@ -22,27 +57,31 @@ class Usercontroller{
         $followers = 0;
 
         foreach($allFollow as $i){
-            if($i["followee"] == $_SESSION["user"]->user_id){
+            if($i["followee"] == $user){
                 $followers += 1;
             }
-            if($i["follower"] == $_SESSION["user"]->user_id){
+            if($i["follower"] == $user){
                 $follow += 1;
             }
         }
-
-        require_once "views/profile.php";
+        return [$follow, $followers];
     }
 
     public function otherAction(){
 
         $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
-        //Riktiga bindParam parametern
-        //$_POST["user_id"]
+
         $OtherProfileStm = $db->prepare('SELECT * FROM users WHERE user_id = :user_id');
         $OtherProfileStm->bindParam(":user_id", $_POST["hidden_user_id"], PDO::PARAM_INT);
         $OtherProfileStm->execute();
+
         $user = $OtherProfileStm->fetchObject();
-        require_once "views/other_user.php";
+
+
+        $follow = ($this->viewFollowers($_POST["hidden_user_id"])[0]);
+        $followers = ($this->viewFollowers($_POST["hidden_user_id"])[1]);
+
+        require_once "views/profile.php";
     }
 
     public function addStatusAction(){
@@ -191,5 +230,21 @@ class Usercontroller{
 
             }
         }
+    }
+
+    public function showAllAction(){
+
+        $db = new PDO("mysql:host=localhost;dbname=myspace", "root", "root");
+        $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+
+        $allUsersStm = $db->prepare('SELECT first_name, last_name, profile_img FROM users');
+        $allUsersStm->execute();
+
+        $allUsers = $allUsersStm->fetchAll();
+
+
+        require_once "views/header.php";
+
+
     }
 }

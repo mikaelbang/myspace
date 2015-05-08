@@ -43,7 +43,7 @@
 .menuItemsSearch{
     display: inline-block;
     margin-left: 40px;
-    padding-top: 11px;
+    padding-top: 7px;
 }
 
 .menuItemText{
@@ -52,6 +52,49 @@
 
 .search{
     width: 300px;
+    height: 26px;
+    -webkit-appearance:none;
+    border: 1px solid #1c8591;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+.searchContent{
+    position: absolute;
+    width: 297px;
+    background-color: white;
+    margin-left: 225px;
+    margin-top: -5px;
+    border: 1px solid #1c8591;
+    display: none;
+}
+
+.searchRow{
+    width: 297px;
+    height: 40px;
+    cursor: pointer;
+    color: #1c8591;
+}
+
+.searchRow:hover{
+    background-color: #86c3ca;
+    color: white;
+}
+
+.searchRowPic{
+    height: 34px;
+    width: 34px;
+    display: inline-block;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+
+.searchRowName{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 8px;
+    padding-top: 12px;
 }
 
 #rightMenuItem{
@@ -245,8 +288,8 @@
     width: 800px;
     margin: 0 auto;
     opacity: 1;
-    background-color: white;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .statusUser{
@@ -275,6 +318,11 @@
     width: 150px;
     cursor: pointer;
     outline: none;
+}
+
+.aStatus{
+    background-color: white;
+    margin-top: 30px;
 }
 
 .statuses{
@@ -402,7 +450,7 @@
 .commentContent{
     width:800px;
     text-align: center;
-    background-color: #1c8591;
+    background-color: rgba(0,0,0,0.6);
     margin: 0 auto;
     display: none;
 }
@@ -434,20 +482,30 @@
 .othersCommentContent{
     background-color: white;
     margin-bottom: 15px;
+    text-align: left;
+}
+
+.othersCommentPic{
+    display: inline-block;
+    height: 35px;
+    padding-top: 5px;
+    padding-left: 5px;
+    float: left;
 }
 
 .othersCommentText{
+    display: inline-block;
     color: black;
     padding: 15px;
     font-size: 13px;
-    text-align: left;
     line-height: 1.2;
+
 }
 
 .yourComment{
-    background-color: white;
     width: 600px;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .yourCommentText{
