@@ -132,7 +132,7 @@ $(document).ready(function(){
 function comment_insert(postId, comment, userId, this_element, userName, userPic, created){
 
 
-    $.post("../controllers/comment.php" ,
+    $.post("../ajax/comment.php" ,
         {
             hidden_post_id: postId,
             content: comment,
