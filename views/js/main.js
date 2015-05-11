@@ -120,7 +120,7 @@ $(document).ready(function(){
 
         $(this).siblings('.yourComment').find('.yourCommentText').val('');
 
-        //console.log($(this).parent().parent().next('.statusUnderBorder'));
+        //console.log($(this));
 
         //alert($(this).parent().siblings().closest('.statusUnderBorder').find('.showComments')[0].innerText);
 
