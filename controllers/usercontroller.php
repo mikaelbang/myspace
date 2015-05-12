@@ -250,7 +250,5 @@ class Usercontroller{
         $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
         require_once "views/header.php";
-
-
     }
 }
