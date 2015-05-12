@@ -87,6 +87,16 @@ class Usercontroller{
         $otherProfilePostStm->execute();
 
         $posts = $otherProfilePostStm->fetchAll();
+        $comments = array();
+
+        foreach($posts as $post){
+            $commentStm = $db->prepare('SELECT * FROM comments JOIN users AS U ON (U.user_id = comments.user_id) WHERE post_id = :post_id ORDER BY comment_id');
+            $commentStm->bindParam(':post_id', $post["post_id"]);
+            $commentStm->execute();
+            while($comment = $commentStm->fetch()){
+                array_push($comments, $comment);
+            }
+        }
 
 
 

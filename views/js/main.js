@@ -120,7 +120,7 @@ $(document).ready(function(){
 
         $(this).siblings('.yourComment').find('.yourCommentText').val('');
 
-        //console.log($(this).parent().parent().next('.statusUnderBorder'));
+        //console.log($(this));
 
         //alert($(this).parent().siblings().closest('.statusUnderBorder').find('.showComments')[0].innerText);
 
@@ -132,7 +132,7 @@ $(document).ready(function(){
 function comment_insert(postId, comment, userId, this_element, userName, userPic, created){
 
 
-    $.post("../controllers/comment.php" ,
+    $.post("../ajax/comment.php" ,
         {
             hidden_post_id: postId,
             content: comment,
