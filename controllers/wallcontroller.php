@@ -52,5 +52,4 @@ class Wallcontroller{
 
         echo($_POST['content'] ." " . $_POST['hidden_post_id'] ." ". $_SESSION['user']->user_id);
     }
-
 }

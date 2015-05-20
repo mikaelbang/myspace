@@ -100,6 +100,8 @@ class Usercontroller{
 
 
 
+
+
         $follow = ($this->viewFollowers($_POST["hidden_user_id"])[0]);
         $followers = ($this->viewFollowers($_POST["hidden_user_id"])[1]);
 
