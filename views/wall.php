@@ -54,7 +54,7 @@
                 <div class="statusUnderBorder">
                     <div class="showLikes">
                         <p class="showLikesText">13,900 L</p>
-                        <a href="#" class="noStyleLinks"><p class="showComments"><?php echo($comment_count)?></p><img src="../../myspace/views/img/commentpic.png" class="commentPic"/></a>
+                        <div class="showAllComments"><p class="showComments"><?php echo($comment_count)?></p><img src="../../myspace/views/img/commentpic.png" class="commentPic"/></div>
                     </div>
                     <div class="statusButtons">
                         <input class="likeButton" type="submit" value="LIKE" name=""/>
@@ -90,7 +90,7 @@
                     }
                     ?>
                     <div class="yourComment">
-                        <input class="yourCommentText" name="content" type="text" placeholder="Wright your comment here..."/>
+                        <input class="yourCommentText" name="content" type="text" placeholder="Right your comment here..."/>
                     </div>
                     <input class="hidden_post_id" name="hidden_post_id" type="hidden" value="<?php echo($posts[$post]['post_id'])?>">
                     <input class="hidden_current_user" type="hidden" value="<?php echo($_SESSION["user"]->user_id)?>">

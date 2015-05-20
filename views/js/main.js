@@ -25,7 +25,7 @@ $(document).ready(function(){
         $("#page-cover").css("display","block")
     });
 
-    $('.commentButton').on('click', function(){
+    $('.showAllComments').on('click', function(){
 
         //event.preventDefault();
 
@@ -35,12 +35,22 @@ $(document).ready(function(){
 
     });
 
+    $('.commentButton').on('click', function(){
+
+        //event.preventDefault();
+
+
+        $(this).parent().parent().next('.commentContent').animate({height: 'toggle'});
+        //$(this).parent().parent().siblings('.commentContent').find('.othersComments').empty();
+
+    });
+
     $("#cancelButton").click(function(){
         $("#page-cover").css("display","none");
         $("#editContent").css("display","none")
     });
 
-    $(".search").click(function(){
+    $("#search").click(function(){
         $(".searchContent").show();
     });
 
@@ -126,7 +136,61 @@ $(document).ready(function(){
 
 
     })
+
+    $('#search').on('keyup', function(){
+
+        var text = $('#search').val();
+        //alert(text);
+
+        search_user(text);
+
+        $('.searchContent').empty();
+
+
+    })
 });
+
+function search_user(text){
+
+    $.ajax({
+        url: "../ajax/search.php" ,
+        type: "POST",
+        data: {search: text},
+        dataType: "json"
+
+    })
+        .error(
+            function(){
+                console.log("Error: ");
+            })
+        .success(
+            function(data){
+                //console.log(data);
+
+
+
+
+                for(var i = 0; i < data.length; i++){
+                    //show_search_result(data[i]);
+
+                    //console.log(data[i]);
+                    show_search_result(data[i]);
+                }
+            }
+    )
+}
+
+function show_search_result(data){
+
+    var html = '';
+    html += '<div class="searchRow">';
+    html += '<img class="searchRowPic" src="'+ data.profile_img +'"/>';
+    html += '<p class="searchRowName">' + data.first_name + " " + data.last_name + '</p>';
+    html += '</div>';
+
+    $('.searchContent').append(html);
+
+}
 
 
 function comment_insert(postId, comment, userId, this_element, userName, userPic, created){

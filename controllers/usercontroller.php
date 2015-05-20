@@ -112,7 +112,7 @@ class Usercontroller{
 
         if(isset($_POST["post_text_button"]) && !empty($_POST["text"])){
             $addTextStm = $db->prepare("INSERT INTO posts(text, user_id) VALUES (:text, :user_id)");
-            $addTextStm->bindParam(":text", $_POST["text"]);
+            $addTextStm->bindParam(":text", htmlentities($_POST["text"]));
             $addTextStm->bindParam(":user_id", $_SESSION["user"]->user_id);
             $addTextStm->execute();
 
@@ -241,10 +241,10 @@ class Usercontroller{
         if(isset($_POST["save_button"])){
             $updateProfileStm = $db->prepare('UPDATE users SET first_name = :firstname, last_name = :lastname, profile_img = :p_img, about = :about WHERE user_id = :user_id');
             $updateProfileStm->bindParam(":user_id", $_SESSION["user"]->user_id, PDO::PARAM_INT);
-            $updateProfileStm->bindParam(":firstname", $_POST["first_name"]);
-            $updateProfileStm->bindParam(":lastname", $_POST["last_name"]);
-            $updateProfileStm->bindParam(":p_img", $_POST["profile_img"]);
-            $updateProfileStm->bindParam(":about", $_POST["about"]);
+            $updateProfileStm->bindParam(":firstname", htmlentities($_POST["first_name"]));
+            $updateProfileStm->bindParam(":lastname", htmlentities($_POST["last_name"]));
+            $updateProfileStm->bindParam(":p_img", htmlentities($_POST["profile_img"]));
+            $updateProfileStm->bindParam(":about", htmlentities($_POST["about"]));
 
             if($updateProfileStm->execute()){
             header("location:../../myspace/user/show");

@@ -42,7 +42,7 @@
                         <p class="menuItemText">Profile</p>
                     </div></a>
                     <div class="menuItemsSearch">
-                        <input type="search" placeholder="Search" class="search" />
+                        <input type="search" autocomplete="off" name="search" placeholder="Search" id="search" />
                     </div>
                     <div id="rightMenuItem">
                         <a href="#" class="noStyleLinks"><p class="menuItemText"><?php echo($_SESSION['user']->first_name ." " . $_SESSION['user']->last_name)?></p></a>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="searchContent">
-                    <?php
+                    <?php /*
                         for($i = 0; $i < count($allUsers); $i++){
                             if($allUsers[$i]["profile_img"] == null){
                                 $picture = "../../myspace/views/img/anonym.png";
@@ -67,7 +67,7 @@
                         <p class="searchRowName"><?php echo($allUsers[$i]["first_name"] . " " . $allUsers[$i]["last_name"])?></p>
                     </div>
                     <?php
-                         }
+                         }*/
                     ?>
                 </div>
             </div>
